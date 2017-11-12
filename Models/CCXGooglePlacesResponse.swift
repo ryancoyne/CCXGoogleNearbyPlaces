@@ -28,7 +28,6 @@ public struct CCXGooglePlacesResponse {
         
         self.googleStatus            = json?["status"].stringValue
         self.nextPageToken        = json?["next_page_token"].stringValue
-        print(response.code)
         self.status = CCXHTTPResponseStatus.statusFrom(code: response.code)
         if let errorMessage = json?["error_message"].stringValue, let response = response {
             self.error = NSError(domain: response.url?.host ?? "Unknown domain", code: self.status.code, userInfo: [NSLocalizedDescriptionKey: errorMessage])
