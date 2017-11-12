@@ -7,10 +7,6 @@ public struct CCXGoogleSDK {
     private init () {  }
     /// This is the base URL for the Google Places API
     private static let url = URL(string: "https://maps.googleapis.com/maps/api/place/nearbysearch/json")!
-    /// All the categories that you can use that are pre-created.
-    static public var categories : [CCXGooglePlacesCategory] = [
-        .ATM, .bakery, .doctor, .gym, .hairCare, .pharmacy, .restaurant, .store, .spa, .taxiStand
-    ]
     
     /// The CCX Google Places SDK structure.
     public struct places {
@@ -67,7 +63,7 @@ public struct CCXGoogleSDK {
                     params["location"] = "\(coordinate!.latitude),\(coordinate!.longitude)"
                 }
                 if category.isNotNil {
-                    params["type"] = category!.description
+                    params["type"] = category!.rawValue
                 }
                 if withRadius.isNotNil {
                     params["radius"] = withRadius!
