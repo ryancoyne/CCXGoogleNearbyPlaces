@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print(response.places!)
                 }
             } else if response.error.isNotNil {
+                /// 
                 print(response.error!)
             }
         }

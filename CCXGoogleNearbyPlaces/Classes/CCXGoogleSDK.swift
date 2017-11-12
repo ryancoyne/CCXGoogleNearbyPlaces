@@ -82,7 +82,7 @@ public struct CCXGoogleSDK {
             let request = URLRequest(url: placesURL)
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
-                var ccxResponse = CCXGooglePlacesResponse(json: data?.json)
+                var ccxResponse = CCXGooglePlacesResponse(json: data?.json, response: response)
                 ccxResponse.error = error
                 DispatchQueue.main.async {
                     completion(ccxResponse)

@@ -88,7 +88,7 @@ extension Optional where Wrapped == URLResponse {
     public var status : CCXHTTPResponseStatus {
         return CCXHTTPResponseStatus.statusFrom(code: self.code)
     }
-    private var code : Int {
+    public var code : Int {
         return (self as? HTTPURLResponse)?.statusCode ?? -1
     }
     /// This returns the headers of the response
