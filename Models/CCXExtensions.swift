@@ -8,17 +8,17 @@
 import Foundation
 
 //MARK: - Optional Extension:
-extension Optional {
+public extension Optional {
     /// This returns whether or not the optional is equal to nil.
-    var isNil : Bool {
+    public var isNil : Bool {
         return self == nil
     }
     /// This returns whether or not the optional is not equal to nil.
-    var isNotNil : Bool {
+    public var isNotNil : Bool {
         return self != nil
     }
     /// This returns the optional unwrapped into a boolean value.
-    var boolValue : Bool? {
+    public var boolValue : Bool? {
         if self.isNil {
             return nil
         }
@@ -32,34 +32,34 @@ extension Optional {
         }
     }
     /// This returns the optionally wrapped object as a string value.
-    var stringValue : String? {
+    public var stringValue : String? {
         return self as? String
     }
-    var stringArray : [String]? {
+    public var stringArray : [String]? {
         return self as? [String]
     }
     /// This returns the optionally wrapped object as a dictionary value.
-    var dicValue : [String:Any]! {
+    public var dicValue : [String:Any]! {
         return self as? [String:Any] ?? [:]
     }
     /// This returns the optionally wrapped object as an array of dictionaries...value.
-    var arrayDicValue : [[String:Any]]! {
+    public var arrayDicValue : [[String:Any]]! {
         return self as? [[String:Any]] ?? [[:]]
     }
     /// This returns the optionally wrapped object as an integer value.
-    var intValue : Int? {
+    public var intValue : Int? {
         return self as? Int
     }
     /// This returns the optionally wrapped object as a double value.
-    var doubleValue : Double? {
+    public var doubleValue : Double? {
         return self as? Double
     }
     /// This returns the optionally wrapped object as a float value.
-    var floatValue : Float? {
+    public var floatValue : Float? {
         return self as? Float
     }
     /// This returns the optionally wrapped object as a URL value.
-    var urlValue : URL? {
+    public var urlValue : URL? {
         if self.isNil {
             return nil
         }
@@ -75,7 +75,7 @@ extension Optional {
 }
 
 extension Optional where Wrapped == URLResponse {
-    var isSuccess : Bool {
+    public var isSuccess : Bool {
         switch self.code {
         case 200...299:
             return true
@@ -83,13 +83,13 @@ extension Optional where Wrapped == URLResponse {
             return false
         }
     }
-    var status : CCXHTTPResponseStatus {
+    public var status : CCXHTTPResponseStatus {
         return CCXHTTPResponseStatus.statusFrom(code: self.code)
     }
     private var code : Int {
         return (self as? HTTPURLResponse)?.statusCode ?? -1
     }
-    var headers : [AnyHashable:Any] {
+    public var headers : [AnyHashable:Any] {
         return (self as! HTTPURLResponse).allHeaderFields
     }
 }
@@ -106,7 +106,7 @@ extension Bool {
 
 //MARK: - Data Extension:
 extension Data {
-    var json : [String:Any]? {
+    public var json : [String:Any]? {
         if let r = try? JSONSerialization.jsonObject(with: self, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:Any] {
             return r
         } else {
@@ -116,7 +116,7 @@ extension Data {
 }
 
 extension URL {
-    init(scheme: String?="https", host: String, path: String, queryParams: [String:Any]) {
+    public init(scheme: String?="https", host: String, path: String, queryParams: [String:Any]) {
         var comps = URLComponents()
         comps.scheme = scheme!
         comps.host = host

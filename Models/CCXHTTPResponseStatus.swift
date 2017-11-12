@@ -97,6 +97,15 @@ public enum CCXHTTPResponseStatus: CustomStringConvertible {
         }
     }
     
+    public var isSuccess : Bool {
+        switch self.code {
+        case 200...299:
+            return true
+        default:
+            return false
+        }
+    }
+    
     public static func statusFrom(code: Int) -> CCXHTTPResponseStatus {
         switch code {
         case 100: return .continue

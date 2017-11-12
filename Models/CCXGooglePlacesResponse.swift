@@ -9,12 +9,12 @@ import Foundation
 
 public struct CCXGooglePlacesResponse {
     
-    var nextPageToken : String? = nil
-    var places : [CCXGooglePlace]?
+    public var nextPageToken : String? = nil
+    public var places : [CCXGooglePlace]?
     private var googleStatus : String? = nil
-    var error : Error?
-    var status : CCXHTTPResponseStatus!
-    var canLoadMore : Bool {
+    public var error : Error?
+    public var status : CCXHTTPResponseStatus!
+    public var canLoadMore : Bool {
         return self.googleStatus == "OK" && self.nextPageToken.isNotNil
     }
     
