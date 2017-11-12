@@ -84,7 +84,6 @@ public struct CCXGoogleSDK {
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 var ccxResponse = CCXGooglePlacesResponse(json: data?.json)
                 ccxResponse.error = error
-                ccxResponse.status = CCXHTTPResponseStatus.statusFrom(code: response.status.code)
                 DispatchQueue.main.async {
                     completion(ccxResponse)
                 }

@@ -10,11 +10,17 @@ import CoreLocation
 
 public struct CCXGooglePlace {
     
+    /// This returns the coordinate of the place nearby.
     var location: CLLocationCoordinate2D?
+    /// This returns the name of the place nearby.
     var name: String?
+    /// This returns the photos of the place nearby.
     var photos: [CCXGooglePhoto]?
+    /// This returns the vicinity of the place nearby.
     var vicinity: String?
+    /// This returns a boolean indicating whether the place nearby is open.
     var isOpen: Bool?
+    /// This is an array of types for the place.
     var types: [String]?
     
     init(placeJSON:[String: Any]?=nil) {
