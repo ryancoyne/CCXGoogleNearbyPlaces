@@ -6,10 +6,22 @@
 //
 
 public enum CCXGooglePlacesCategory : CustomStringConvertible {
-    
-    case custom(value : String) 
+    /// Custom category.  You may use a custom category in your API search.  Just use .custom(value: "category_value")
+    case custom(value : String)
+    /// These are the general values of the places categories.
+    /// - bakery
+    /// - doctor
+    /// - taxiStand
+    /// - hairCare
+    /// - restaurant
+    /// - pharmacy
+    /// - ATM
+    /// - gym
+    /// - store
+    /// - spa
     case bakery, doctor, taxiStand, hairCare, restaurant, pharmacy, ATM, gym, store, spa
     
+    /// This returns the description used for the query parameters in the API request.
     public var description: String {
         switch self {
         case .ATM:

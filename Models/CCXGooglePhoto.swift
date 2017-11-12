@@ -14,7 +14,7 @@ struct CCXGooglePhoto {
     var url: URL? {
         var buildURL = CCXGooglePhoto.host
         
-        var queryParams : [String:Any] = ["key":CCXGoogleSDK.apiKey!]
+        var queryParams : [String:Any] = ["key":CCXGoogleSDK.places.apiKey!]
         
         if maxwidth != nil {
             queryParams["maxwidth"] = self.maxwidth!

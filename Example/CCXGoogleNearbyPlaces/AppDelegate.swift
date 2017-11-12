@@ -18,14 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        CCXGoogleSDK.apiKey = ""
+        CCXGoogleSDK.places.apiKey = "AIzaSyBXjLkF6Zqi7ocGKppo2d50AuAqLsZO408"
         let coord = CLLocationCoordinate2D(latitude: 38.928544, longitude: -77.03130332)
-        CCXGoogleSDK.getPlaces(withRadius: 300, coordinate: coord) { response in
-            if response.error.isNil {
+        
+        CCXGoogleSDK.places.get(withRadius: 300, coordinate: coord) { response in
+            if response.status.isSuccess {
                 if response.places.isNotNil {
-                    
+                    if response.canLoadMore {
+                        // You should only use the pageToken in the get function on your next request.
+                    }
+                    // Deal with the places:
+                    print(response.places!)
                 }
-            } else {
+            } else if response.error.isNotNil {
                 print(response.error!)
             }
         }

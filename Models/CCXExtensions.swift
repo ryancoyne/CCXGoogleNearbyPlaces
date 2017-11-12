@@ -129,17 +129,30 @@ extension URL {
         comps.queryItems = queryItems
         self = comps.url!
     }
-    mutating func addQueryParams(_ queryParams : [String:Any]) {
+    public mutating func addQueryParams(_ queryParams : [String:Any]) {
+        
+//        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         // Start putting together the paths:
-        
-        var queryItems : [URLQueryItem] = []
+//        var queryIt : [URLQueryItem] = []
+        var qstr = ""
         for param in queryParams {
-            queryItems.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
+//            queryIt.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
+//            components?.queryItems?.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
+//            components?.queryItems?.append(URLQueryItem(name: "key", value: "1234567890"))
+             qstr.append("\(param.key)=\(param.value)&")
+
         }
-        components?.queryItems?.append(contentsOf: queryItems)
-        if let url = components?.url {
+//        components?.queryItems?.append(contentsOf: queryIt)
+
+        // get rid of the last &
+        qstr.removeLast()
+        
+        components?.query = qstr
+        
+        if let url = components?.url  {
             self = url
         }
+
     }
 }
