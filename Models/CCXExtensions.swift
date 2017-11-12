@@ -134,19 +134,18 @@ extension URL {
     /// Add query parameters to your URL object using a dictionary.
     public mutating func addQueryParams(_ queryParams : [String:Any]) {
         
-//        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
-        // Start putting together the paths:
-
-        var qstr = ""
-        for param in queryParams {
-             qstr.append("\(param.key)=\(param.value)&")
-        }
-
-        // get rid of the last &
-        qstr.removeLast()
         
-        components?.query = qstr
+        // Start putting together the paths:
+        for param in queryParams {
+            // If the query items is nil, we need to initialize so we can actually add the items:
+            if components?.queryItems.isNil == true {
+                components?.queryItems = []
+            }
+            let queryItem = URLQueryItem(name: param.key, value: String(describing: param.value))
+            components?.queryItems?.append(queryItem)
+        
+        }
         
         if let url = components?.url  {
             self = url
