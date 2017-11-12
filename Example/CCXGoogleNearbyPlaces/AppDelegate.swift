@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CCXGoogleNearbyPlaces
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CCXGoogleSDK.apiKey = ""
+        let coord = CLLocationCoordinate2D(latitude: 38.928544, longitude: -77.03130332)
+        CCXGoogleSDK.getPlaces(withRadius: 300, coordinate: coord) { (response) in
+            
+            
+        }
         return true
     }
 

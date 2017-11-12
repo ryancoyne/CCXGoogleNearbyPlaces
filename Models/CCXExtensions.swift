@@ -73,6 +73,26 @@ extension Optional {
         }
     }
 }
+
+extension Optional where Wrapped == URLResponse {
+    var isSuccess : Bool {
+        switch self.code {
+        case 200...299:
+            return true
+        default:
+            return false
+        }
+    }
+    var status : CCXHTTPResponseStatus {
+        return CCXHTTPResponseStatus.statusFrom(code: self.code)
+    }
+    private var code : Int {
+        return (self as? HTTPURLResponse)?.statusCode ?? -1
+    }
+    var headers : [AnyHashable:Any] {
+        return (self as! HTTPURLResponse).allHeaderFields
+    }
+}
 //MARK: - Boolean Extension:
 extension Bool {
     init(_ integerValue : Int) {
@@ -80,6 +100,46 @@ extension Bool {
             self.init(false)
         } else {
             self.init(true)
+        }
+    }
+}
+
+//MARK: - Data Extension:
+extension Data {
+    var json : [String:Any]? {
+        if let r = try? JSONSerialization.jsonObject(with: self, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:Any] {
+            return r
+        } else {
+            return nil
+        }
+    }
+}
+
+extension URL {
+    init(scheme: String?="https", host: String, path: String, queryParams: [String:Any]) {
+        var comps = URLComponents()
+        comps.scheme = scheme!
+        comps.host = host
+        comps.path = path
+        // Start putting together the paths:
+        var queryItems : [URLQueryItem] = []
+        for param in queryParams {
+            queryItems.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
+        }
+        comps.queryItems = queryItems
+        self = comps.url!
+    }
+    mutating func addQueryParams(_ queryParams : [String:Any]) {
+        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
+        // Start putting together the paths:
+        
+        var queryItems : [URLQueryItem] = []
+        for param in queryParams {
+            queryItems.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
+        }
+        components?.queryItems?.append(contentsOf: queryItems)
+        if let url = components?.url {
+            self = url
         }
     }
 }
