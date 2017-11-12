@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'The CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  It is super easy to use, you just generate an API key from URL and you are good to go!'
 
   s.homepage         = 'https://github.com/ryancoyne_/CCXGoogleNearbyPlaces'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,6 +26,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ryancoyne_/CCXGoogleNearbyPlaces.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift-version = '4.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'CCXGoogleNearbyPlaces/Classes/**/*'
