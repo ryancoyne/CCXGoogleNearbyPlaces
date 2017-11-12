@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         CCXGoogleSDK.places.apiKey = "AIzaSyBXjLkF6Zqi7ocGKppo2d50AuAqLsZO408"
-        let coord = CLLocationCoordinate2D(latitude: 38.928544, longitude: -77.03130332)
+        let coord = CLLocationCoordinate2D(latitude: 28.928544, longitude: -80.03130332)
         
         CCXGoogleSDK.places.get(withRadius: 300, coordinate: coord) { response in
             if response.status.isSuccess {
