@@ -75,6 +75,7 @@ public extension Optional {
 }
 
 extension Optional where Wrapped == URLResponse {
+    /// This returns a boolean describing the success of the response.
     public var isSuccess : Bool {
         switch self.code {
         case 200...299:
@@ -83,14 +84,16 @@ extension Optional where Wrapped == URLResponse {
             return false
         }
     }
+    /// This returns a status enumeration, containing the success of the response, the code, and the description of the normal status repsonses.
     public var status : CCXHTTPResponseStatus {
         return CCXHTTPResponseStatus.statusFrom(code: self.code)
     }
     private var code : Int {
         return (self as? HTTPURLResponse)?.statusCode ?? -1
     }
-    public var headers : [AnyHashable:Any] {
-        return (self as! HTTPURLResponse).allHeaderFields
+    /// This returns the headers of the response
+    public var headers : [AnyHashable:Any]? {
+        return (self as? HTTPURLResponse)?.allHeaderFields 
     }
 }
 //MARK: - Boolean Extension:
@@ -116,6 +119,7 @@ extension Data {
 }
 
 extension URL {
+    /// Initialize a URL with some query parameters.  The scheme is defauled to https.
     public init(scheme: String?="https", host: String, path: String, queryParams: [String:Any]) {
         var comps = URLComponents()
         comps.scheme = scheme!
@@ -129,21 +133,17 @@ extension URL {
         comps.queryItems = queryItems
         self = comps.url!
     }
+    /// Add query parameters to your URL object using a dictionary.
     public mutating func addQueryParams(_ queryParams : [String:Any]) {
         
 //        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         // Start putting together the paths:
-//        var queryIt : [URLQueryItem] = []
+
         var qstr = ""
         for param in queryParams {
-//            queryIt.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
-//            components?.queryItems?.append(URLQueryItem(name: param.key, value: String(describing: param.value)))
-//            components?.queryItems?.append(URLQueryItem(name: "key", value: "1234567890"))
              qstr.append("\(param.key)=\(param.value)&")
-
         }
-//        components?.queryItems?.append(contentsOf: queryIt)
 
         // get rid of the last &
         qstr.removeLast()
