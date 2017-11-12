@@ -5,9 +5,7 @@
 //  Created by Ryan Coyne on 11/12/17.
 //
 
-import Foundation
-
-enum CCXGooglePlaceType : String {
+public enum CCXGooglePlaceType : String {
     case adminAreaLevel1 = "administrative_area_level_1",
     adminAreaLevel2 = "administrative_area_level_2",
     adminAreaLevel3 = "administrative_area_level_3",
