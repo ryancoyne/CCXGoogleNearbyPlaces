@@ -53,7 +53,7 @@ public struct CCXGoogleSDK {
          - parameter response:  This is the response.  This contains the places, the page token, a boolean to indicate if you need to page, and more!
          
          */
-        static public func get(withRadius: Int?=nil, coordinate: CLLocationCoordinate2D?=nil, category: CCXGooglePlacesCategory?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : CCXGooglePlacesResponse) -> Void) {
+        static public func get(withRadius: Int?=nil, coordinate: CLLocationCoordinate2D?=nil, category: CCXGooglePlaceType?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : CCXGooglePlacesResponse) -> Void) {
             
             guard let theAPIKey = places.apiKey, !theAPIKey.isEmpty, !theAPIKey.replacingOccurrences(of: " ", with: "").isEmpty else {
                 // Return a fatal error.  We need the api key to generate any response:
