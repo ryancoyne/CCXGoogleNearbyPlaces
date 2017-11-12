@@ -5,8 +5,6 @@
 //  Created by Ryan Coyne on 11/11/17.
 //
 
-import Foundation
-
 //MARK: - Optional Extension:
 public extension Optional {
     /// This returns whether or not the optional is equal to nil.

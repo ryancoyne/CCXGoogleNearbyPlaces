@@ -1,5 +1,10 @@
+//
+//  CCXGoogleSDK
+//  CCXGoogleNearbyPlaces
+//
+//  Created by Ryan Coyne on 11/11/17.
+//
 
-import Foundation
 import CoreLocation
 
 public struct CCXGoogleSDK {

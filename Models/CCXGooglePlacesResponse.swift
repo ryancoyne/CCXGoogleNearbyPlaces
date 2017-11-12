@@ -5,8 +5,6 @@
 //  Created by Ryan Coyne on 11/11/17.
 //
 
-import Foundation
-
 public struct CCXGooglePlacesResponse {
     
     /// This returns the next page token.  Use this, and ONLY this for your next request, if needed.  It will return the next 20 results.

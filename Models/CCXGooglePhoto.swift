@@ -5,8 +5,6 @@
 //  Created by Ryan Coyne on 11/11/17.
 //
 
-import Foundation
-
 struct CCXGooglePhoto {
     
     var width: Int?

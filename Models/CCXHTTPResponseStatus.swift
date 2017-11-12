@@ -5,8 +5,6 @@
 //  Created by Ryan Coyne on 11/11/17.
 //
 
-import Foundation
-
 /// HTTP response status code/msg.
 public enum CCXHTTPResponseStatus: CustomStringConvertible {
     case `continue`
