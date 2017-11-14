@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'The CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  It is super easy to use, you just generate an API key from URL and you are good to go!'
 
-  s.homepage         = 'https://github.com/ryancoyne_/CCXGoogleNearbyPlaces'
+  s.homepage         = 'https://github.com/ryancoyne/CCXGoogleNearbyPlaces'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ryancoyne_' => 'ryan@clearcodex.com' }
