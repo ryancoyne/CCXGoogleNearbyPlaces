@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CCXGoogleNearbyPlaces'
-  s.version          = '1.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  All you do is set your API Key and you are good to go!'
 
 # This description is used to generate tags and improve search results.
@@ -23,14 +23,14 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ryancoyne_' => 'ryan@clearcodex.com' }
-  s.source           = { :git => 'https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git', :tag => "1.0.1" }
+s.source           = { :git => 'https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git', :tag => '1.0.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios
   s.ios.deployment_target = '10.0'
 
 ###  s.source_files = 'CCXGoogleNearbyPlaces/Classes/**/*'
-  s.source_files = "CCXGoogleNearbyPlaces", "CCXGoogleNearbyPlaces/**/*.{h,m,swift}"
+  s.source_files = 'CCXGoogleNearbyPlaces', 'CCXGoogleNearbyPlaces/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'CCXGoogleNearbyPlaces' => ['CCXGoogleNearbyPlaces/Assets/*.png']
