@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ryancoyne_' => 'ryan@clearcodex.com' }
-s.source           = { :git => 'https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git', :tag => '1.0.0' }
+  s.source           = { :git => 'https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git', :tag => '1.0.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios
