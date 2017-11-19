@@ -535,8 +535,8 @@ public enum CCXGooglePlaceType : CustomStringConvertible {
             return description
         case .unknown:
             return "unknown"
-        default:
-            return ""
+//        default:
+//          return ""
         }
     }
     case adminAreaLevel1, adminAreaLevel2, adminAreaLevel3, adminAreaLevel4, adminAreaLevel5,colloqualArea,country,establishment,finance,floor,food,generalContractor,geocode,health,    intersection,locality,naturalFeature,neighborhood,placeOfWorship,political,pointOfInterest,postBox,postalCode,postalCodePrefix,postalCodeSuffix,postalTown,premise,room,route,streetAddress,streetNumber,sublocality,sublocalityLevel4,
