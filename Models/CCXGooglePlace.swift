@@ -20,7 +20,7 @@ public struct CCXGooglePlace {
     /// This returns a boolean indicating whether the place nearby is open.
     var isOpen: Bool?
     /// This is an array of types for the place.
-    var types: [String]?
+    var types: [CCXGooglePlaceType]?
     
     init(placeJSON:[String: Any]?=nil) {
         // coordinates
@@ -40,15 +40,20 @@ public struct CCXGooglePlace {
         vicinity = placeJSON?["vicinity"].stringValue
         
         // types
-        types = placeJSON?["types"].stringArray
+        if let array = placeJSON?["types"].stringArray {
+            if types.isNil {
+                types = []
+                for type in array {
+                    types?.append(CCXGooglePlaceType.from(type))
+                }
+            }
+        }
     
-        
         // photos
-        photos = [CCXGooglePhoto]()
-        if placeJSON?["photos"].arrayDicValue.isEmpty == false {
+        if let jsonPhotos = placeJSON?["photos"].arrayDicValue {
             // Initialize the photos array:
             photos = []
-            for p in placeJSON!["photos"].arrayDicValue {
+            for p in jsonPhotos {
                 photos?.append(CCXGooglePhoto(photoJSON: p))
             }
         }

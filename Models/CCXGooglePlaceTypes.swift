@@ -5,133 +5,552 @@
 //  Created by Ryan Coyne on 11/12/17.
 //
 
-public enum CCXGooglePlaceType : String {
-    case adminAreaLevel1 = "administrative_area_level_1",
-    adminAreaLevel2 = "administrative_area_level_2",
-    adminAreaLevel3 = "administrative_area_level_3",
-    adminAreaLevel4 = "administrative_area_level_4",
-    adminAreaLevel5 = "administrative_area_level_5",
-    colloqualArea = "colloquial_area",
-    country = "country",
-    establishment = "establishment",
-    finance = "finance",
-    floor = "floor",
-    food = "food",
-    generalContractor = "general_contractor",
-    geocode = "geocode",
-    health = "health",
-    intersection = "intersection",
-    locality = "locality",
-    naturalFeature = "natural_feature",
-    neighborhood = "neighborhood",
-    placeOfWorship = "place_of_worship",
-    political = "political",
-    pointOfInterest = "point_of_interest",
-    postBox = "post_box",
-    postalCode = "postal_code",
-    postalCodePrefix = "postal_code_prefix",
-    postalCodeSuffix = "postal_code_suffix",
-    postalTown = "postal_town",
-    premise = "premise",
-    room = "room",
-    route = "route",
-    streetAddress = "street_address",
-    streetNumber = "street_number",
-    sublocality = "sublocality",
-    sublocalityLevel4 = "sublocality_level_4",
-    sublocalityLevel5 = "sublocality_level_5",
-    sublocalityLevel3 = "sublocality_level_3",
-    sublocalityLevel2 = "sublocality_level_2",
-    sublocalityLevel1 = "sublocality_level_1",
-    subpremise = "subpremise",
-    accounting = "accounting",
-    airport = "airport",
-    amusementPark = "amusement_park",
-    aquarium = "aquarium",
-    artGallery = "art_gallery",
-    atm = "atm",
-    bakery = "bakery",
-    bank = "bank",
-    bar = "bar",
-    beautySalon = "beauty_salon",
-    bicycleStore = "bicycle_store",
-    bookStore = "book_store",
-    bowlingAlley = "bowling_alley",
-    busStation = "bus_station",
-    cafe = "cafe",
-    campground = "campground",
-    carDealer = "car_dealer",
-    carRental = "car_rental",
-    carRepair = "car_repair",
-    carWash = "car_wash",
-    casino = "casino",
-    cemetery = "cemetery",
-    church = "church",
-    cityHall = "city_hall",
-    clothingStore = "clothing_store",
-    convenienceStore = "convenience_store",
-    courthouse = "courthouse",
-    dentist = "dentist",
-    departmentStore = "department_store",
-    doctor = "doctor",
-    electrician = "electrician",
-    electronicsStore = "electronics_store",
-    embassy = "embassy",
-    fireStation = "fire_station",
-    florist = "florist",
-    funeralHome = "funeral_home",
-    furnitureStore = "furniture_store",
-    gasStation = "gas_station",
-    groceryOrSupermarket = "grocery_or_supermarket",
-    gym = "gym",
-    hairCare = "hair_care",
-    hardwareStore = "hardware_store",
-    hinduTemple = "hindu_temple",
-    homeGoodsStore = "home_goods_store",
-    insuranceAgency = "insurance_agency",
-    jewelryStore = "jewelry_store",
-    laundry = "laundry",
-    lawyer = "lawyer",
-    library = "library",
-    liquorStore = "liquor_store",
-    localGovernmentOffice = "local_government_office",
-    locksmith = "locksmith",
-    lodging = "lodging",
-    mealDelivery = "meal_delivery",
-    mealTakeaway = "meal_takeaway",
-    mosque = "mosque",
-    movieRental = "movie_rental",
-    movieTheater = "movie_theater",
-    movingCompany = "moving_company",
-    museum = "museum",
-    nightClub = "night_club",
-    painter = "painter",
-    park = "park",
-    parking = "parking",
-    petStore = "pet_store",
-    pharmacy = "pharmacy",
-    physiotherapist = "physiotherapist",
-    plumber = "plumber",
-    police = "police",
-    postOffice = "post_office",
-    realEstateAgency = "real_estate_agency",
-    restaurant = "restaurant",
-    roofingContractor = "roofing_contractor",
-    rvPark = "rv_park",
-    school = "school",
-    shoeStore = "shoe_store",
-    shoppingMall = "shopping_mall",
-    spa = "spa",
-    stadium = "stadium",
-    storage = "storage",
-    store = "store",
-    subwayStation = "subway_station",
-    synagogue = "synagogue",
-    taxiStand = "taxi_stand",
-    trainStation = "train_station",
-    transitStation = "transit_station",
-    travelAgency = "travel_agency",
-    university = "university",
-    veterinaryCare = "veterinary_care",
-    zoo = "zoo"
+public enum CCXGooglePlaceType : CustomStringConvertible {
+    
+    internal static func from(_ string : String?) -> CCXGooglePlaceType {
+        switch string {
+        case "administrative_area_level_1"?:
+            return .adminAreaLevel1
+        case "administrative_area_level_2"?:
+            return .adminAreaLevel2
+        case"administrative_area_level_3"?:
+            return .adminAreaLevel3
+        case "administrative_area_level_4"?:
+            return .adminAreaLevel4
+        case "administrative_area_level_5"?:
+            return .adminAreaLevel5
+        case "colloquial_area"?:
+            return .colloqualArea
+        case "country"?:
+            return .country
+        case "establishment"?:
+            return .establishment
+        case "finance"?:
+            return .finance
+        case "floor"?:
+            return .floor
+        case "food"?:
+            return .food
+        case "general_contractor"?:
+            return .generalContractor
+        case "geocode"?:
+            return .geocode
+        case "health"?:
+            return  .health
+        case "intersection"?:
+            return .intersection
+        case "locality"?:
+            return .locality
+        case "natural_feature"?:
+            return .naturalFeature
+        case "neighborhood"?:
+            return .neighborhood
+        case "place_of_worship"?:
+            return .placeOfWorship
+        case "political"?:
+            return .political
+        case "point_of_interest"?:
+            return .pointOfInterest
+        case "post_box"?:
+            return .postBox
+        case "postal_code"?:
+            return .postalCode
+        case "postal_code_prefix"?:
+            return .postalCodePrefix
+        case "postal_code_suffix"?:
+            return .postalCodeSuffix
+        case "postal_town"?:
+            return .postalTown
+        case "premise"?:
+            return .premise
+        case "room"?:
+            return .room
+        case "route"?:
+            return .route
+        case "street_address"?:
+            return .streetAddress
+        case "street_number"?:
+            return .streetNumber
+        case "sublocality"?:
+            return .sublocality
+        case "sublocality_level_1"?:
+            return .sublocalityLevel1
+        case  "sublocality_level_2"?:
+            return .sublocalityLevel2
+        case "sublocality_level_3"?:
+            return .sublocalityLevel3
+        case "sublocality_level_4"?:
+            return .sublocalityLevel4
+        case "sublocality_level_5"?:
+            return .sublocalityLevel5
+        case "subpremise"?:
+            return .subpremise
+        case  "accounting"?:
+            return .accounting
+        case "airport"?:
+            return .airport
+        case "amusement_park"?:
+            return .amusementPark
+        case "aquarium"?:
+            return .aquarium
+        case  "art_gallery"?:
+            return .artGallery
+        case "atm"?:
+            return .atm
+        case "bakery"?:
+            return .bakery
+        case "bank"?:
+            return .bank
+        case "bar"?:
+            return .bar
+        case "beauty_salon"?:
+            return .beautySalon
+        case "bicycle_store"?:
+            return .bicycleStore
+        case "book_store"?:
+            return .bookStore
+        case "bowling_alley"?:
+            return .bowlingAlley
+        case "bus_station"?:
+            return .busStation
+        case "cafe"?:
+            return .cafe
+        case "campground"?:
+            return .campground
+        case "car_dealer"?:
+            return .carDealer
+        case "car_rental"?:
+            return .carRental
+        case "car_repair"?:
+            return .carRepair
+        case "car_wash"?:
+            return .carWash
+        case "casino"?:
+            return .casino
+        case "cemetery"?:
+            return .cemetery
+        case "church"?:
+            return .church
+        case "city_hall"?:
+            return .cityHall
+        case "clothing_store"?:
+            return .clothingStore
+        case "convenience_store"?:
+            return .convenienceStore
+        case "courthouse"?:
+            return .courthouse
+        case "dentist"?:
+            return .dentist
+        case "department_store"?:
+            return .departmentStore
+        case "doctor"?:
+            return .doctor
+        case "electrician"?:
+            return .electrician
+        case "electronics_store"?:
+            return .electronicsStore
+        case "embassy"?:
+            return .embassy
+        case "fire_station"?:
+            return .fireStation
+        case "florist"?:
+            return .florist
+        case "funeral_home"?:
+            return .funeralHome
+        case "furniture_store"?:
+            return .furnitureStore
+        case "gas_station"?:
+            return .gasStation
+        case "grocery_or_supermarket"?:
+            return .groceryOrSupermarket
+        case  "gym"?:
+            return .gym
+        case "hair_care"?:
+            return .hairCare
+        case "hardware_store"?:
+            return .hardwareStore
+        case "hindu_temple"?:
+            return .hinduTemple
+        case "home_goods_store"?:
+            return .homeGoodsStore
+        case "insurance_agency"?:
+            return .insuranceAgency
+        case "jewelry_store"?:
+            return .jewelryStore
+        case "lawyer"?:
+            return .lawyer
+        case "laundry"?:
+            return .laundry
+        case "library"?:
+            return .library
+        case "liquor_store"?:
+            return .liquorStore
+        case "local_government_office"?:
+            return .localGovernmentOffice
+        case "locksmith"?:
+            return .locksmith
+        case "lodging"?:
+            return .lodging
+        case "meal_delivery"?:
+            return .mealDelivery
+        case "meal_takeaway"?:
+            return .mealTakeaway
+        case "mosque"?:
+            return .mosque
+        case "movie_rental"?:
+            return .movieRental
+        case  "movie_theater"?:
+            return .movieTheater
+        case "moving_company"?:
+            return .movingCompany
+        case "museum"?:
+            return .museum
+        case "night_club"?:
+            return .nightClub
+        case "painter"?:
+            return .painter
+        case "park"?:
+            return .park
+        case "parking"?:
+            return .parking
+        case "pet_store"?:
+            return .petStore
+        case "pharmacy"?:
+            return .pharmacy
+        case "physiotherapist"?:
+            return .physiotherapist
+        case "plumber"?:
+            return .plumber
+        case "police"?:
+            return .police
+        case "post_office"?:
+            return .postOffice
+        case "real_estate_agency"?:
+            return .realEstateAgency
+        case "restaurant"?:
+            return .restaurant
+        case "roofing_contractor"?:
+            return .roofingContractor
+        case "rv_park"?:
+            return .rvPark
+        case "school"?:
+            return .school
+        case "shoe_store"?:
+            return .shoeStore
+        case "shopping_mall"?:
+            return .shoppingMall
+        case "spa"?:
+            return .spa
+        case "stadium"?:
+            return .stadium
+        case "storage"?:
+            return .storage
+        case "store"?:
+            return .store
+        case "subway_station"?:
+            return .subwayStation
+        case "synagogue"?:
+            return .synagogue
+        case "taxi_stand"?:
+            return .taxiStand
+        case "train_station"?:
+            return .trainStation
+        case "transit_station"?:
+            return .transitStation
+        case "travel_agency"?:
+            return .travelAgency
+        case "university"?:
+            return .university
+        case "veterinary_care"?:
+            return .veterinaryCare
+        case "zoo"?:
+            return .zoo
+        default:
+            if string.isNotNil {
+                return .custom(description: string!)
+            } else {
+                return .unknown
+            }
+        }
+    }
+    public var description: String {
+        switch self {
+        case .adminAreaLevel1:
+            return "administrative_area_level_1"
+        case .adminAreaLevel2:
+            return "administrative_area_level_2"
+        case .adminAreaLevel3:
+            return "administrative_area_level_3"
+        case .adminAreaLevel4:
+            return "administrative_area_level_4"
+        case .adminAreaLevel5:
+            return "administrative_area_level_5"
+        case .colloqualArea:
+            return "colloquial_area"
+        case .country:
+            return "country"
+        case .establishment:
+            return "establishment"
+        case .finance:
+            return "finance"
+        case .floor:
+            return "floor"
+        case .food:
+            return "food"
+        case .generalContractor:
+            return "general_contractor"
+        case .geocode:
+            return "geocode"
+        case .health:
+            return "health"
+        case .intersection:
+            return "intersection"
+        case .locality:
+            return "locality"
+        case .naturalFeature:
+            return "natural_feature"
+        case .neighborhood:
+            return "neighborhood"
+        case .placeOfWorship:
+            return "place_of_worship"
+        case .political:
+            return "political"
+        case .pointOfInterest:
+            return "point_of_interest"
+        case .postBox:
+            return "post_box"
+        case .postalCode:
+            return "postal_code"
+        case .postalCodePrefix:
+            return "postal_code_prefix"
+        case .postalCodeSuffix:
+            return "postal_code_suffix"
+        case .postalTown:
+            return "postal_town"
+        case .premise:
+            return "premise"
+        case .room:
+            return "room"
+        case .route:
+            return "route"
+        case .streetAddress:
+            return "street_address"
+        case .streetNumber:
+            return "street_number"
+        case .sublocality:
+            return "sublocality"
+        case .sublocalityLevel1:
+            return "sublocality_level_1"
+        case .sublocalityLevel2:
+            return "sublocality_level_2"
+        case .sublocalityLevel3:
+            return "sublocality_level_3"
+        case .sublocalityLevel4:
+            return "sublocality_level_4"
+        case .sublocalityLevel5:
+            return "sublocality_level_5"
+        case .subpremise:
+            return "subpremise"
+        case .accounting:
+            return "accounting"
+        case .airport:
+            return "airport"
+        case .amusementPark:
+            return "amusement_park"
+        case .aquarium:
+            return "aquarium"
+        case .artGallery:
+            return "art_gallery"
+        case .atm:
+            return "atm"
+        case .bakery:
+            return "bakery"
+        case .bank:
+            return "bank"
+        case .bar:
+            return "bar"
+        case .beautySalon:
+            return "beauty_salon"
+        case .bicycleStore:
+            return "bicycle_store"
+        case .bookStore:
+            return "book_store"
+        case .bowlingAlley:
+            return "bowling_alley"
+        case .busStation:
+            return "bus_station"
+        case .cafe:
+            return "cafe"
+        case .campground:
+            return "campground"
+        case .carDealer:
+            return "car_dealer"
+        case .carRental:
+            return "car_rental"
+        case .carRepair:
+            return "car_repair"
+        case .carWash:
+            return "car_wash"
+        case .casino:
+            return "casino"
+        case .cemetery:
+            return "cemetery"
+        case .church:
+            return "church"
+        case .cityHall:
+            return "city_hall"
+        case .clothingStore:
+            return "clothing_store"
+        case .convenienceStore :
+            return "convenience_store"
+        case .courthouse:
+            return "courthouse"
+        case .dentist:
+            return "dentist"
+        case .departmentStore:
+            return "department_store"
+        case .doctor:
+            return "doctor"
+        case .electrician:
+            return "electrician"
+        case .electronicsStore:
+            return "electronics_store"
+        case .embassy:
+            return "embassy"
+        case .fireStation:
+            return "fire_station"
+        case .florist:
+            return "florist"
+        case .funeralHome:
+            return "funeral_home"
+        case .furnitureStore:
+            return "furniture_store"
+        case .gasStation:
+            return "gas_station"
+        case .groceryOrSupermarket:
+            return "grocery_or_supermarket"
+        case .gym:
+            return "gym"
+        case .hairCare:
+            return "hair_care"
+        case .hardwareStore:
+            return "hardware_store"
+        case .hinduTemple:
+            return "hindu_temple"
+        case .homeGoodsStore:
+            return "home_goods_store"
+        case .insuranceAgency:
+            return "insurance_agency"
+        case .jewelryStore:
+            return "jewelry_store"
+        case .lawyer:
+            return "lawyer"
+        case .laundry:
+            return "laundry"
+        case .library:
+            return "library"
+        case .liquorStore:
+            return "liquor_store"
+        case .localGovernmentOffice:
+            return "local_government_office"
+        case .locksmith:
+            return "locksmith"
+        case .lodging:
+            return "lodging"
+        case .mealDelivery:
+            return "meal_delivery"
+        case .mealTakeaway:
+            return "meal_takeaway"
+        case .mosque:
+            return "mosque"
+        case .movieRental:
+            return "movie_rental"
+        case .movieTheater:
+            return "movie_theater"
+        case .movingCompany:
+            return "moving_company"
+        case .museum:
+            return "museum"
+        case .nightClub:
+            return "night_club"
+        case .painter:
+            return "painter"
+        case .park:
+            return "park"
+        case .parking:
+            return "parking"
+        case .petStore:
+            return "pet_store"
+        case .pharmacy:
+            return "pharmacy"
+        case .physiotherapist:
+            return "physiotherapist"
+        case .plumber:
+            return "plumber"
+        case .police:
+            return "police"
+        case .postOffice:
+            return "post_office"
+        case .realEstateAgency:
+            return "real_estate_agency"
+        case .restaurant:
+            return "restaurant"
+        case .roofingContractor:
+            return "roofing_contractor"
+        case .rvPark:
+            return "rv_park"
+        case .school:
+            return "school"
+        case .shoeStore:
+            return "shoe_store"
+        case .shoppingMall:
+            return "shopping_mall"
+        case .spa:
+            return "spa"
+        case .stadium:
+            return "stadium"
+        case .storage:
+            return "storage"
+        case .store:
+            return "store"
+        case .subwayStation:
+            return "subway_station"
+        case .synagogue:
+            return "synagogue"
+        case .taxiStand:
+            return "taxi_stand"
+        case .trainStation:
+            return "train_station"
+        case .transitStation:
+            return "transit_station"
+        case .travelAgency:
+            return "travel_agency"
+        case .university:
+            return "university"
+        case .veterinaryCare:
+            return "veterinary_care"
+        case .zoo:
+            return "zoo"
+        case .custom(let description):
+            return description
+        case .unknown:
+            return "unknown"
+        default:
+            return ""
+        }
+    }
+    case adminAreaLevel1, adminAreaLevel2, adminAreaLevel3, adminAreaLevel4, adminAreaLevel5,colloqualArea,country,establishment,finance,floor,food,generalContractor,geocode,health,    intersection,locality,naturalFeature,neighborhood,placeOfWorship,political,pointOfInterest,postBox,postalCode,postalCodePrefix,postalCodeSuffix,postalTown,premise,room,route,streetAddress,streetNumber,sublocality,sublocalityLevel4,
+    sublocalityLevel5,sublocalityLevel3,sublocalityLevel2,sublocalityLevel1,subpremise,accounting,airport,amusementPark,aquarium,artGallery,atm,bakery,bank,bar,beautySalon,bicycleStore,bookStore,bowlingAlley,busStation,cafe,campground,carDealer,carRental,carRepair,carWash,casino,cemetery,church,cityHall,clothingStore,convenienceStore,courthouse,dentist,
+    departmentStore,doctor,electrician,electronicsStore,embassy,fireStation,florist,funeralHome,furnitureStore,gasStation,groceryOrSupermarket,gym,hairCare,
+    hardwareStore,
+    hinduTemple,
+    homeGoodsStore,insuranceAgency,jewelryStore,laundry,lawyer,library,liquorStore,localGovernmentOffice,locksmith,lodging,mealDelivery,mealTakeaway,mosque,movieRental,movieTheater,movingCompany,museum,nightClub,painter,park,parking,petStore,pharmacy,physiotherapist,plumber,police,postOffice,realEstateAgency,restaurant,roofingContractor,rvPark,school,shoeStore,shoppingMall,spa,stadium,storage,store,subwayStation,synagogue,taxiStand,
+    trainStation,
+    transitStation,
+    travelAgency,
+    university,
+    veterinaryCare,
+    zoo,
+    unknown,
+    custom(description: String)
 }

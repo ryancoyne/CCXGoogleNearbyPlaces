@@ -68,7 +68,7 @@ public struct CCXGoogleSDK {
                     params["location"] = "\(coordinate!.latitude),\(coordinate!.longitude)"
                 }
                 if category.isNotNil {
-                    params["type"] = category!.rawValue
+                    params["type"] = category!.description
                 }
                 if withRadius.isNotNil {
                     params["radius"] = withRadius!
