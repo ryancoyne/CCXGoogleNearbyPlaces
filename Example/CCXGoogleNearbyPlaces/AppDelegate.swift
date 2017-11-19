@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CCXGoogleSDK.places.apiKey = "AIzaSyBXjLkF6Zqi7ocGKppo2d50AuAqLsZO408"
         let coord = CLLocationCoordinate2D(latitude: 28.928544, longitude: -80.03130332)
         
-        CCXGoogleSDK.places.get(withRadius: 300, coordinate: coord) { response in
+        CCXGoogleSDK.places.get(withRadius: 300.0, coordinate: coord) { response in
             if response.status.isSuccess {
                 if response.places.isNotNil {
                     if response.canLoadMore {

@@ -57,7 +57,7 @@ public struct CCXGoogleSDK {
          
          */
         
-        static public func get(withText: String?=nil, withRadius: Int?=nil, coordinate: CLLocationCoordinate2D?=nil, category: CCXGooglePlaceType?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : CCXGooglePlacesResponse) -> Void) {
+        static public func get(withText: String?=nil, withRadius: CLLocationDistance?=nil, coordinate: CLLocationCoordinate2D?=nil, category: CCXGooglePlaceType?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : CCXGooglePlacesResponse) -> Void) {
             
             guard let theAPIKey = places.apiKey, !theAPIKey.isEmpty, !theAPIKey.replacingOccurrences(of: " ", with: "").isEmpty else {
                 // Return a fatal error.  We need the api key to generate any response:
@@ -76,7 +76,7 @@ public struct CCXGoogleSDK {
                         params["type"] = category!.description
                     }
                     if withRadius.isNotNil {
-                        params["radius"] = withRadius!
+                        params["radius"] = withRadius.intValue
                     }
                     params["query"] = withText?.replacingOccurrences(of: " ", with: "+")
                 } else {
@@ -106,7 +106,7 @@ public struct CCXGoogleSDK {
                         params["type"] = category!.description
                     }
                     if withRadius.isNotNil {
-                        params["radius"] = withRadius!
+                        params["radius"] = withRadius.intValue
                     }
                     
                 } else {

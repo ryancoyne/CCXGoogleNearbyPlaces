@@ -46,7 +46,17 @@ public extension Optional {
     }
     /// This returns the optionally wrapped object as an integer value.
     public var intValue : Int? {
-        return self as? Int
+        if self.isNil { return nil }
+        switch self {
+        case is Int, is Int?:
+            return self as? Int
+        case is Double, is Double?:
+            return Int(exactly: self as! Double)
+        case is Float, is Float?:
+            return Int(exactly: self as! Float)
+        default:
+            return nil
+        }
     }
     /// This returns the optionally wrapped object as a double value.
     public var doubleValue : Double? {
