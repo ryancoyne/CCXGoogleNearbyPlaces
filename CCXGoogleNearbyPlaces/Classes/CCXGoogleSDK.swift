@@ -78,7 +78,7 @@ public struct CCXGoogleSDK {
                     if withRadius.isNotNil {
                         params["radius"] = withRadius.intValue
                     }
-                    params["query"] = withText?.replacingOccurrences(of: " ", with: "+")
+                    params["query"] = withText
                 } else {
                     params["pagetoken"] = pageToken!
                 }

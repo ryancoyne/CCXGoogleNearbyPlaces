@@ -22,7 +22,7 @@ public struct CCXGooglePlacesResponse {
         return self.googleStatus == "OK" && self.nextPageToken.isNotNil
     }
     
-    internal init(json: [String:Any]?=nil, response: URLResponse?=nil) {
+    init(json: [String:Any]?=nil, response: URLResponse?=nil) {
         
         self.googleStatus            = json?["status"].stringValue
         self.nextPageToken        = json?["next_page_token"].stringValue
