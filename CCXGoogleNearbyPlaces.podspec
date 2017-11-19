@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
 ###  s.source_files = 'CCXGoogleNearbyPlaces/Classes/**/*'
-  s.source_files = 'CCXGoogleNearbyPlaces', 'CCXGoogleNearbyPlaces/**/*.{h,m,swift}'
+  s.source_files = 'CCXGoogleNearbyPlaces', 'CCXGoogleNearbyPlaces/**/*.{h,m,swift}', 'CCXGoogleNearByPlaces/Models/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'CCXGoogleNearbyPlaces' => ['CCXGoogleNearbyPlaces/Assets/*.png']
