@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E070F052094ACCF2612029E27799F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
+		1886D56C21112DDF4D4F5E3D70E9C52F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
+		216F06115D9E39EA2ECBF9976195263E /* Pods-CCXGoogleNearbyPlaces_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63AEC2D0D95B6A6DB768A659CB6A3A /* Pods-CCXGoogleNearbyPlaces_Tests-dummy.m */; };
+		2E7D6F2CD54A298B89FFC4CC30E4D828 /* CCXGoogleNearbyPlaces-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79229FEB706391376FF9EC3EB99C329E /* CCXGoogleNearbyPlaces-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBBAF62AB2AE49656CCDDDBFD6D59EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
+		905834741B495FDE0123BB149879A263 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */; };
+		907672F2CA12523C683BAE8F29AC547B /* CCXGoogleNearbyPlaces-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1DB2C54D493E8CBB7B944CA3BD4DBF /* CCXGoogleNearbyPlaces-dummy.m */; };
+		9B925CF37E4D86A8472C5107FFEE59E6 /* Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C4C5B2E123C8D8D80D3FA3ED19DF3C /* Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FF92B6B03DA6BA39C611B4BADF52DE4 /* Pods-CCXGoogleNearbyPlaces_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB79680B6658DD4F6E8874E878D10D7 /* Pods-CCXGoogleNearbyPlaces_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65863936B54EC6D6CCEAF6B26B8B769 /* CCXExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC8A91C294B4628521CE9BBEC50BC2 /* CCXExtensions.swift */; };
+		A66A2EA25D484241AA8A0A86A0BB3A44 /* CCXHTTPResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C0607B2E7E21E16BE6F6C2BA52CE3C /* CCXHTTPResponseStatus.swift */; };
+		A7869289409FB70BDC582C4F9830E55D /* CCXGooglePlacesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EDDB813A278A8CF52A0575F45E01 /* CCXGooglePlacesCategory.swift */; };
+		A7F3CBE61BA4F4C99D3A38F8127E98C1 /* CCXGooglePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CE6583B8EC08148A40F42DD8371C7 /* CCXGooglePhoto.swift */; };
+		BCD8AB4F3CBC5320ADFA0123F35E8CFA /* Pods-CCXGoogleNearbyPlaces_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C123612A296476619A014765A4769 /* Pods-CCXGoogleNearbyPlaces_Example-dummy.m */; };
+		C1164B85424E187EBB023809C1D6D59B /* CCXGooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3DCC64EB0778F22E6D3F5B16AAF63 /* CCXGooglePlace.swift */; };
+		C6D8BE21F0C9647E7B1FE167D50190BF /* CCXGoogleSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848B36AB7F4E4857EF6434135EECFA0 /* CCXGoogleSDK.swift */; };
+		C97F57D1312A27DF02956DAC3B99CBBC /* CCXGooglePlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEEC367BC78CF538FC6F1CEEED5158 /* CCXGooglePlacesResponse.swift */; };
+		CDE64050D129009C12766037BB7B4DBA /* CCXGooglePlaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B33EB79BC3D206F953174FA0AB4C68 /* CCXGooglePlaceTypes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70D420B708501A3381A9E6C62B795B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3A91B390D369D7695DF26530A8A2FA1;
+			remoteInfo = CCXGoogleNearbyPlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038BBA2484061D6130B426D61D224597 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
+		05C0607B2E7E21E16BE6F6C2BA52CE3C /* CCXHTTPResponseStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXHTTPResponseStatus.swift; sourceTree = "<group>"; };
+		0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		104CE6583B8EC08148A40F42DD8371C7 /* CCXGooglePhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXGooglePhoto.swift; sourceTree = "<group>"; };
+		12DEEC367BC78CF538FC6F1CEEED5158 /* CCXGooglePlacesResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXGooglePlacesResponse.swift; sourceTree = "<group>"; };
+		16B33EB79BC3D206F953174FA0AB4C68 /* CCXGooglePlaceTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXGooglePlaceTypes.swift; sourceTree = "<group>"; };
+		1C63AEC2D0D95B6A6DB768A659CB6A3A /* Pods-CCXGoogleNearbyPlaces_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCXGoogleNearbyPlaces_Tests-dummy.m"; sourceTree = "<group>"; };
+		284449493BEC02A8A5F1D91804538195 /* Pods-CCXGoogleNearbyPlaces_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCXGoogleNearbyPlaces_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2DA3DCC64EB0778F22E6D3F5B16AAF63 /* CCXGooglePlace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXGooglePlace.swift; sourceTree = "<group>"; };
+		30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		367A48F893D567F1F41EEE277D3B61A4 /* CCXGoogleNearbyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCXGoogleNearbyPlaces.framework; path = CCXGoogleNearbyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3337B0EE9D35F61A00184FB6256EBB /* Pods-CCXGoogleNearbyPlaces_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCXGoogleNearbyPlaces_Tests-resources.sh"; sourceTree = "<group>"; };
+		456F31CBF9D9E9CABB8E24E3340CB3B2 /* CCXGoogleNearbyPlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCXGoogleNearbyPlaces.xcconfig; sourceTree = "<group>"; };
+		47C7E04BF7D30D1D220AF1D492BE5D65 /* Pods-CCXGoogleNearbyPlaces_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCXGoogleNearbyPlaces_Example-resources.sh"; sourceTree = "<group>"; };
+		5A3D80197785FDAE48DDD6C21AE39142 /* Pods_CCXGoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CCXGoogleNearbyPlaces_Example.framework; path = "Pods-CCXGoogleNearbyPlaces_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE8527AB3EE09FF62E56CD186A221EF /* Pods-CCXGoogleNearbyPlaces_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCXGoogleNearbyPlaces_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6009558DD3819AAC1D0AE88C9336DD36 /* Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FC8C4284282291B3832C000BBAC39F9 /* Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7142A247E218FFAB447A657F5DEE90B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72213E1CCC8CC7B5BFE1B272A2AEAC87 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7327625EE3BB099AE4F9B2BD8AC54D15 /* Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7572EDDB813A278A8CF52A0575F45E01 /* CCXGooglePlacesCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXGooglePlacesCategory.swift; sourceTree = "<group>"; };
+		79229FEB706391376FF9EC3EB99C329E /* CCXGoogleNearbyPlaces-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCXGoogleNearbyPlaces-umbrella.h"; sourceTree = "<group>"; };
+		7AACB021023672EE14BC647BCF877CBA /* Pods-CCXGoogleNearbyPlaces_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CCXGoogleNearbyPlaces_Example.modulemap"; sourceTree = "<group>"; };
+		7EB4B49C048B67B9158FB6178AA91B66 /* Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91C171263CDEBD1C503649725966F685 /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EB79680B6658DD4F6E8874E878D10D7 /* Pods-CCXGoogleNearbyPlaces_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCXGoogleNearbyPlaces_Example-umbrella.h"; sourceTree = "<group>"; };
+		ABFC8A91C294B4628521CE9BBEC50BC2 /* CCXExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCXExtensions.swift; sourceTree = "<group>"; };
+		B1C4C5B2E123C8D8D80D3FA3ED19DF3C /* Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BA5CADC6D1F5CEBD8AFFE163274C10C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1DB2C54D493E8CBB7B944CA3BD4DBF /* CCXGoogleNearbyPlaces-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCXGoogleNearbyPlaces-dummy.m"; sourceTree = "<group>"; };
+		CF555FEA73CE5F5BED0FAC905A87F209 /* Pods-CCXGoogleNearbyPlaces_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CCXGoogleNearbyPlaces_Tests.modulemap"; sourceTree = "<group>"; };
+		DEBF0737D3255DF919F7E776E7C8DAD4 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CCXGoogleNearbyPlaces_Tests.framework; path = "Pods-CCXGoogleNearbyPlaces_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37C123612A296476619A014765A4769 /* Pods-CCXGoogleNearbyPlaces_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCXGoogleNearbyPlaces_Example-dummy.m"; sourceTree = "<group>"; };
+		E696CC164F37AFF876C68EAE37A219F3 /* CCXGoogleNearbyPlaces-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCXGoogleNearbyPlaces-prefix.pch"; sourceTree = "<group>"; };
+		E848B36AB7F4E4857EF6434135EECFA0 /* CCXGoogleSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCXGoogleSDK.swift; path = CCXGoogleNearbyPlaces/Classes/CCXGoogleSDK.swift; sourceTree = "<group>"; };
+		EED33BA552883E92790C69D046B7602B /* CCXGoogleNearbyPlaces.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CCXGoogleNearbyPlaces.modulemap; sourceTree = "<group>"; };
+		F028F40633AA1D2AC8F506AE022FEDA3 /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2CF7772B5D1F3647F57B7D7E0D755A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F0C6032B720F635B9BFC4188996A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905834741B495FDE0123BB149879A263 /* CoreLocation.framework in Frameworks */,
+				09E070F052094ACCF2612029E27799F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2617AECE8154C3CDC5C181B639A5C001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886D56C21112DDF4D4F5E3D70E9C52F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612787724A4A13CD63912EEFFE3CFD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBBAF62AB2AE49656CCDDDBFD6D59EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB1F9303D4FCFAC6F81DE9C9CE63F66E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CF546BFE11AD8D1C4E9125F19729449 /* Pods-CCXGoogleNearbyPlaces_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7142A247E218FFAB447A657F5DEE90B6 /* Info.plist */,
+				7AACB021023672EE14BC647BCF877CBA /* Pods-CCXGoogleNearbyPlaces_Example.modulemap */,
+				7327625EE3BB099AE4F9B2BD8AC54D15 /* Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.markdown */,
+				6FC8C4284282291B3832C000BBAC39F9 /* Pods-CCXGoogleNearbyPlaces_Example-acknowledgements.plist */,
+				E37C123612A296476619A014765A4769 /* Pods-CCXGoogleNearbyPlaces_Example-dummy.m */,
+				5EE8527AB3EE09FF62E56CD186A221EF /* Pods-CCXGoogleNearbyPlaces_Example-frameworks.sh */,
+				47C7E04BF7D30D1D220AF1D492BE5D65 /* Pods-CCXGoogleNearbyPlaces_Example-resources.sh */,
+				9EB79680B6658DD4F6E8874E878D10D7 /* Pods-CCXGoogleNearbyPlaces_Example-umbrella.h */,
+				91C171263CDEBD1C503649725966F685 /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */,
+				038BBA2484061D6130B426D61D224597 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */,
+			);
+			name = "Pods-CCXGoogleNearbyPlaces_Example";
+			path = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Example";
+			sourceTree = "<group>";
+		};
+		702051D320006B3BE1D4B4CD27ACEC8B /* CCXGoogleNearbyPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E848B36AB7F4E4857EF6434135EECFA0 /* CCXGoogleSDK.swift */,
+				C43142BE803DA9323B2D7B1F9CF08BCC /* Models */,
+				AC63D1C338A7531D76AD6ED6203D5ACA /* Support Files */,
+			);
+			name = CCXGoogleNearbyPlaces;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				94E48822078EADE4829B04D91C59ABCA /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A31E98E5C55DB8A9B558A870BDA4F806 /* Products */,
+				E30C3175BFA6AB4C1EB0E7ADB7E1888F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94E48822078EADE4829B04D91C59ABCA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				702051D320006B3BE1D4B4CD27ACEC8B /* CCXGoogleNearbyPlaces */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A31E98E5C55DB8A9B558A870BDA4F806 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				367A48F893D567F1F41EEE277D3B61A4 /* CCXGoogleNearbyPlaces.framework */,
+				5A3D80197785FDAE48DDD6C21AE39142 /* Pods_CCXGoogleNearbyPlaces_Example.framework */,
+				DEBF0737D3255DF919F7E776E7C8DAD4 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC63D1C338A7531D76AD6ED6203D5ACA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EED33BA552883E92790C69D046B7602B /* CCXGoogleNearbyPlaces.modulemap */,
+				456F31CBF9D9E9CABB8E24E3340CB3B2 /* CCXGoogleNearbyPlaces.xcconfig */,
+				CE1DB2C54D493E8CBB7B944CA3BD4DBF /* CCXGoogleNearbyPlaces-dummy.m */,
+				E696CC164F37AFF876C68EAE37A219F3 /* CCXGoogleNearbyPlaces-prefix.pch */,
+				79229FEB706391376FF9EC3EB99C329E /* CCXGoogleNearbyPlaces-umbrella.h */,
+				F2CF7772B5D1F3647F57B7D7E0D755A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CCXGoogleNearbyPlaces";
+			sourceTree = "<group>";
+		};
+		B8C4CBF736912693A9717BCDBBC354D8 /* Pods-CCXGoogleNearbyPlaces_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BA5CADC6D1F5CEBD8AFFE163274C10C2 /* Info.plist */,
+				CF555FEA73CE5F5BED0FAC905A87F209 /* Pods-CCXGoogleNearbyPlaces_Tests.modulemap */,
+				7EB4B49C048B67B9158FB6178AA91B66 /* Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.markdown */,
+				6009558DD3819AAC1D0AE88C9336DD36 /* Pods-CCXGoogleNearbyPlaces_Tests-acknowledgements.plist */,
+				1C63AEC2D0D95B6A6DB768A659CB6A3A /* Pods-CCXGoogleNearbyPlaces_Tests-dummy.m */,
+				284449493BEC02A8A5F1D91804538195 /* Pods-CCXGoogleNearbyPlaces_Tests-frameworks.sh */,
+				3A3337B0EE9D35F61A00184FB6256EBB /* Pods-CCXGoogleNearbyPlaces_Tests-resources.sh */,
+				B1C4C5B2E123C8D8D80D3FA3ED19DF3C /* Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h */,
+				F028F40633AA1D2AC8F506AE022FEDA3 /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */,
+				72213E1CCC8CC7B5BFE1B272A2AEAC87 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */,
+			);
+			name = "Pods-CCXGoogleNearbyPlaces_Tests";
+			path = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests";
+			sourceTree = "<group>";
+		};
+		C43142BE803DA9323B2D7B1F9CF08BCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC8A91C294B4628521CE9BBEC50BC2 /* CCXExtensions.swift */,
+				104CE6583B8EC08148A40F42DD8371C7 /* CCXGooglePhoto.swift */,
+				2DA3DCC64EB0778F22E6D3F5B16AAF63 /* CCXGooglePlace.swift */,
+				7572EDDB813A278A8CF52A0575F45E01 /* CCXGooglePlacesCategory.swift */,
+				12DEEC367BC78CF538FC6F1CEEED5158 /* CCXGooglePlacesResponse.swift */,
+				16B33EB79BC3D206F953174FA0AB4C68 /* CCXGooglePlaceTypes.swift */,
+				05C0607B2E7E21E16BE6F6C2BA52CE3C /* CCXHTTPResponseStatus.swift */,
+			);
+			name = Models;
+			path = CCXGoogleNearbyPlaces/Classes/Models;
+			sourceTree = "<group>";
+		};
+		CB1F9303D4FCFAC6F81DE9C9CE63F66E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */,
+				30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E30C3175BFA6AB4C1EB0E7ADB7E1888F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF546BFE11AD8D1C4E9125F19729449 /* Pods-CCXGoogleNearbyPlaces_Example */,
+				B8C4CBF736912693A9717BCDBBC354D8 /* Pods-CCXGoogleNearbyPlaces_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41A0CB684464F9487A54A5D5EF330675 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7D6F2CD54A298B89FFC4CC30E4D828 /* CCXGoogleNearbyPlaces-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA0BE7FEE6405571179471DAD7EB2EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B925CF37E4D86A8472C5107FFEE59E6 /* Pods-CCXGoogleNearbyPlaces_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E772F15F83705A311EB3BA63D30BFAEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF92B6B03DA6BA39C611B4BADF52DE4 /* Pods-CCXGoogleNearbyPlaces_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22F30BCCE1A180358E9D7B97BEA06EFB /* Pods-CCXGoogleNearbyPlaces_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A929CAB3D3F1CC6E02BC852B9BFB6142 /* Build configuration list for PBXNativeTarget "Pods-CCXGoogleNearbyPlaces_Example" */;
+			buildPhases = (
+				9DAC61944BF7843031D371501B748630 /* Sources */,
+				612787724A4A13CD63912EEFFE3CFD0D /* Frameworks */,
+				E772F15F83705A311EB3BA63D30BFAEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBD6E5C41277DA02425AA484F4299A4E /* PBXTargetDependency */,
+			);
+			name = "Pods-CCXGoogleNearbyPlaces_Example";
+			productName = "Pods-CCXGoogleNearbyPlaces_Example";
+			productReference = 5A3D80197785FDAE48DDD6C21AE39142 /* Pods_CCXGoogleNearbyPlaces_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3A91B390D369D7695DF26530A8A2FA1 /* CCXGoogleNearbyPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC41EACA3B6D11D870647EFADD8E968 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces" */;
+			buildPhases = (
+				ED9F5091E95AA9DC95617301C4E46AFE /* Sources */,
+				03F0C6032B720F635B9BFC4188996A20 /* Frameworks */,
+				41A0CB684464F9487A54A5D5EF330675 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCXGoogleNearbyPlaces;
+			productName = CCXGoogleNearbyPlaces;
+			productReference = 367A48F893D567F1F41EEE277D3B61A4 /* CCXGoogleNearbyPlaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC0E55E85DE091637DF9B8804F1B7972 /* Pods-CCXGoogleNearbyPlaces_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663070262AFF37B1E09AA368631D52C1 /* Build configuration list for PBXNativeTarget "Pods-CCXGoogleNearbyPlaces_Tests" */;
+			buildPhases = (
+				B5DCD92CA75CE5696EE73BC0C295B2A0 /* Sources */,
+				2617AECE8154C3CDC5C181B639A5C001 /* Frameworks */,
+				5CA0BE7FEE6405571179471DAD7EB2EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CCXGoogleNearbyPlaces_Tests";
+			productName = "Pods-CCXGoogleNearbyPlaces_Tests";
+			productReference = DEBF0737D3255DF919F7E776E7C8DAD4 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A31E98E5C55DB8A9B558A870BDA4F806 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3A91B390D369D7695DF26530A8A2FA1 /* CCXGoogleNearbyPlaces */,
+				22F30BCCE1A180358E9D7B97BEA06EFB /* Pods-CCXGoogleNearbyPlaces_Example */,
+				FC0E55E85DE091637DF9B8804F1B7972 /* Pods-CCXGoogleNearbyPlaces_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DAC61944BF7843031D371501B748630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD8AB4F3CBC5320ADFA0123F35E8CFA /* Pods-CCXGoogleNearbyPlaces_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DCD92CA75CE5696EE73BC0C295B2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216F06115D9E39EA2ECBF9976195263E /* Pods-CCXGoogleNearbyPlaces_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9F5091E95AA9DC95617301C4E46AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65863936B54EC6D6CCEAF6B26B8B769 /* CCXExtensions.swift in Sources */,
+				907672F2CA12523C683BAE8F29AC547B /* CCXGoogleNearbyPlaces-dummy.m in Sources */,
+				A7F3CBE61BA4F4C99D3A38F8127E98C1 /* CCXGooglePhoto.swift in Sources */,
+				C1164B85424E187EBB023809C1D6D59B /* CCXGooglePlace.swift in Sources */,
+				A7869289409FB70BDC582C4F9830E55D /* CCXGooglePlacesCategory.swift in Sources */,
+				C97F57D1312A27DF02956DAC3B99CBBC /* CCXGooglePlacesResponse.swift in Sources */,
+				CDE64050D129009C12766037BB7B4DBA /* CCXGooglePlaceTypes.swift in Sources */,
+				C6D8BE21F0C9647E7B1FE167D50190BF /* CCXGoogleSDK.swift in Sources */,
+				A66A2EA25D484241AA8A0A86A0BB3A44 /* CCXHTTPResponseStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBD6E5C41277DA02425AA484F4299A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCXGoogleNearbyPlaces;
+			target = B3A91B390D369D7695DF26530A8A2FA1 /* CCXGoogleNearbyPlaces */;
+			targetProxy = 70D420B708501A3381A9E6C62B795B2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D6B6F0C7D361A1EA9037A6414CD2AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C171263CDEBD1C503649725966F685 /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CCXGoogleNearbyPlaces_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A57DA150EF47B585A9529511521362C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72213E1CCC8CC7B5BFE1B272A2AEAC87 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CCXGoogleNearbyPlaces_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		678A6CBC533AF20A62A16A59D4DE76E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456F31CBF9D9E9CABB8E24E3340CB3B2 /* CCXGoogleNearbyPlaces.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCXGoogleNearbyPlaces/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces.modulemap";
+				PRODUCT_NAME = CCXGoogleNearbyPlaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9AC5FD7ACA8AB03E84682BC903F6ACD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038BBA2484061D6130B426D61D224597 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CCXGoogleNearbyPlaces_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE1A43B977E4AC18839E7277307DD1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F028F40633AA1D2AC8F506AE022FEDA3 /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CCXGoogleNearbyPlaces_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC39320BBE8E298CBC4FA00EAEF6B476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456F31CBF9D9E9CABB8E24E3340CB3B2 /* CCXGoogleNearbyPlaces.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCXGoogleNearbyPlaces/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces.modulemap";
+				PRODUCT_NAME = CCXGoogleNearbyPlaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663070262AFF37B1E09AA368631D52C1 /* Build configuration list for PBXNativeTarget "Pods-CCXGoogleNearbyPlaces_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1A43B977E4AC18839E7277307DD1B5 /* Debug */,
+				2A57DA150EF47B585A9529511521362C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC41EACA3B6D11D870647EFADD8E968 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC39320BBE8E298CBC4FA00EAEF6B476 /* Debug */,
+				678A6CBC533AF20A62A16A59D4DE76E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A929CAB3D3F1CC6E02BC852B9BFB6142 /* Build configuration list for PBXNativeTarget "Pods-CCXGoogleNearbyPlaces_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6B6F0C7D361A1EA9037A6414CD2AC5 /* Debug */,
+				9AC5FD7ACA8AB03E84682BC903F6ACD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

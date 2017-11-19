@@ -1,0 +1,27 @@
+{
+  "name": "CCXGoogleNearbyPlaces",
+  "version": "1.0.1",
+  "summary": "CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  All you do is set your API Key and you are good to go!",
+  "description": "The CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  It is super easy to use, you just generate an API key from URL and you are good to go!",
+  "homepage": "https://github.com/ryancoyne/CCXGoogleNearbyPlaces",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ryancoyne_": "ryan@clearcodex.com"
+  },
+  "source": {
+    "git": "https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git",
+    "tag": "1.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": [
+    "CCXGoogleNearbyPlaces",
+    "CCXGoogleNearbyPlaces/**/*.{h,m,swift}",
+    "CCXGoogleNearByPlaces/Models/**/*.{h,m,swift}"
+  ],
+  "frameworks": "CoreLocation"
+}
