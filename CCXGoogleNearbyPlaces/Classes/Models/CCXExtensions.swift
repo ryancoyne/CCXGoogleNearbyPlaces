@@ -51,9 +51,9 @@ public extension Optional {
         case is Int, is Int?:
             return self as? Int
         case is Double, is Double?:
-            return Int(exactly: self as! Double)
+            return Int(self as! Double)
         case is Float, is Float?:
-            return Int(exactly: self as! Float)
+            return Int(self as! Float)
         default:
             return nil
         }
