@@ -5,11 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
 [![Platform](https://img.shields.io/cocoapods/p/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
 
+## Why use CCXGoogleNearbyPlaces?
+- I made this cocoapod for the use of Google Maps & integrating a way to search nearby places without the generic search controller that they provide.  This give you the flexibility of making your own custom search UI.
+- CCXGoogleNearbyPlaces gives you ALL the options using the API.  It gives you the photo URL's for the places found as well as paging results, searching by a set type/category or custom category & search by text credientials.
+- CCXGoogleNearbyPlaces does NOT use another other third party networking tools to complete the API calls.  
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+From there, you may set a breakpoint in the AppDelegate where we call to the Nearby Places API and give a response & see if this is a cocoapod that could be of use for you.
 
 ## Installation
 
