@@ -48,6 +48,7 @@ CCXGoogleSDK.places.get(withText: "restaurants", withRadius: 300.4, coordinate: 
         if response.places.isNotNil {
             if response.canLoadMore {
             // You should only use the pageToken in the get function on your next request.
+                self.queueForNextLoad = true
             }
             // Deal with the places:
             print(response.places!)
@@ -64,18 +65,19 @@ Get all the nearby places with only a radius & a location coordinate:
 let coord = CLLocationCoordinate2D()
 // Radius is in meters.
 CCXGoogleSDK.places.get(withRadius: 300.4, coordinate: coord) { response in
-if response.status.isSuccess {
-if response.places.isNotNil {
-if response.canLoadMore {
-// You should only use the pageToken in the get function on your next request.
-}
-// Deal with the places:
-print(response.places!)
-}
-} else if response.error.isNotNil {
-//
-print(response.error!)
-}
+    if response.status.isSuccess {
+        if response.places.isNotNil {
+            if response.canLoadMore {
+                // You should only use the pageToken in the get function on your next request.
+                self.queueForNextLoad = true
+            }
+            // Deal with the places:
+            print(response.places!)
+        }
+    } else if response.error.isNotNil {
+        //
+        print(response.error!)
+    }
 }
 ```
 
@@ -83,25 +85,25 @@ Get all the nearby places with your next page token:
 ```
 CCXGoogleSDK.places.get(pageToken: "nextPageToken") { (response) in
 
-if response.status.isSuccess {
-if response.places.isNotNil {
-if response.canLoadMore {
-// You should only use the pageToken in the get function on your next request.
-
-}
-// Deal with the places:
-print(response.places!)
-}
-} else if response.error.isNotNil {
-//
-print(response.error!)
-}
+    if response.status.isSuccess {
+        if response.places.isNotNil {
+            if response.canLoadMore {
+            // You should only use the pageToken in the get function on your next request.
+                self.queueForNextLoad = true
+            }
+            // Deal with the places:
+            print(response.places!)
+        }
+    } else if response.error.isNotNil {
+        //
+        print(response.error!)
+    }
 
 }
 ```
 
 ## More
-Documentation links:
+Google Documentation links:
 - [Searching Documentation](https://developers.google.com/places/web-service/search)
 - [Photo Documentation](https://developers.google.com/places/web-service/photos)
 
