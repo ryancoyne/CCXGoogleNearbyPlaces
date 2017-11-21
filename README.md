@@ -102,6 +102,25 @@ CCXGoogleSDK.places.get(pageToken: "nextPageToken") { (response) in
 }
 ```
 
+Get places around you with a specific type or category:
+```
+CCXGoogleSDK.places.get(withRadius: 200.4, coordinate: coord, category: .hairCare) { (response) in
+    if response.status.isSuccess {
+        if response.places.isNotNil {
+            if response.canLoadMore {
+            // You should only use the pageToken in the get function on your next request.
+
+            }
+            // Deal with the places:
+            print(response.places!)
+        }
+    } else if response.error.isNotNil {
+        //
+        print(response.error!)
+    }
+}
+```
+
 ## More
 Google Documentation links:
 - [Searching Documentation](https://developers.google.com/places/web-service/search)
