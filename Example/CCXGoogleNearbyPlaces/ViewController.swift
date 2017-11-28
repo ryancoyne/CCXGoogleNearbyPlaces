@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CCXGoogleNearbyPlaces
 //
-//  Created by ryancoyne_ on 11/11/2017.
-//  Copyright (c) 2017 ryancoyne_. All rights reserved.
+//  Created by ryancoyne on 11/11/2017.
+//  Copyright (c) 2017 ryancoyne. All rights reserved.
 //
 
 import UIKit

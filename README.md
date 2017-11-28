@@ -1,6 +1,6 @@
 # CCXGoogleNearbyPlaces
 
-[![CI Status](http://img.shields.io/travis/ryancoyne_/CCXGoogleNearbyPlaces.svg?style=flat)](https://travis-ci.org/ryancoyne_/CCXGoogleNearbyPlaces)
+[![CI Status](http://img.shields.io/travis/ryancoyne/CCXGoogleNearbyPlaces.svg?style=flat)](https://travis-ci.org/ryancoyne/CCXGoogleNearbyPlaces)
 [![Version](https://img.shields.io/cocoapods/v/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
 [![License](https://img.shields.io/cocoapods/l/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
 [![Platform](https://img.shields.io/cocoapods/p/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
@@ -133,7 +133,7 @@ Google Documentation links:
 
 ## Author
 
-ryancoyne_, ryan@clearcodex.com
+ryancoyne, ryan@clearcodex.com
 
 ## License
 
