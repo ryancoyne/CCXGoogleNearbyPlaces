@@ -7,7 +7,7 @@
 
 import CoreLocation
 
-public struct CCXGoogleSDK {
+public struct GoogleNearbyPlacesSDK {
     
     private init () {  }
     /// This is the base URL for the Google Places API
@@ -57,11 +57,11 @@ public struct CCXGoogleSDK {
          
          */
         
-        static public func get(withText: String?=nil, withRadius: CLLocationDistance?=nil, coordinate: CLLocationCoordinate2D?=nil, category: CCXGooglePlaceType?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : CCXGooglePlacesResponse) -> Void) {
+        static public func get(withText: String?=nil, withRadius: CLLocationDistance?=nil, coordinate: CLLocationCoordinate2D?=nil, category: GooglePlaceType?=nil, pageToken : String?=nil, _ completion: @escaping (_ response : GooglePlacesResponse) -> Void) {
             
             guard let theAPIKey = places.apiKey, !theAPIKey.isEmpty, !theAPIKey.replacingOccurrences(of: " ", with: "").isEmpty else {
                 // Return a fatal error.  We need the api key to generate any response:
-                fatalError("[CCXGoogleSDK] ERROR:  You need to set your Google Places API key.  Please go to \"https://developers.google.com/places/web-service/get-api-key\"")
+                fatalError("[GoogleNearbyPlacesSDK] ERROR:  You need to set your Google Places API key.  Please go to \"https://developers.google.com/places/web-service/get-api-key\"")
             }
             
             // If there is text we need to hit the textsearch URL:
@@ -73,7 +73,7 @@ public struct CCXGoogleSDK {
                         params["location"] = "\(coordinate!.latitude),\(coordinate!.longitude)"
                     }
                     if category.isNotNil {
-                        params["type"] = category!.description
+                        params["type"] = category!.rawValue
                     }
                     if withRadius.isNotNil {
                         params["radius"] = withRadius.intValue
@@ -88,10 +88,19 @@ public struct CCXGoogleSDK {
                 let request = URLRequest(url: placesURL)
                 
                 URLSession.shared.dataTask(with: request) { (data, response, error) in
-                    var ccxResponse = CCXGooglePlacesResponse(json: data?.json, response: response)
-                    ccxResponse.error = error
+//                    var ccxResponse = GooglePlacesResponse(json: data?.json, response: response)
+                    var respon = GooglePlacesResponse()
+                    if data.isNotNil {
+                        do {
+                            respon = try JSONDecoder().decode(GooglePlacesResponse.self, from: data!)
+                        } catch {
+                            print("[GoogleNeabyPlacesSDK] ERROR: Decoding GooglePlacesResponse..\(error)")
+                        }
+                    }
+                    
+                    respon.status = (response as! HTTPURLResponse).statusCode
                     DispatchQueue.main.async {
-                        completion(ccxResponse)
+                        completion(respon)
                     }
                 }.resume()
                 
@@ -103,7 +112,7 @@ public struct CCXGoogleSDK {
                         params["location"] = "\(coordinate!.latitude),\(coordinate!.longitude)"
                     }
                     if category.isNotNil {
-                        params["type"] = category!.description
+                        params["type"] = category!.rawValue
                     }
                     if withRadius.isNotNil {
                         params["radius"] = withRadius.intValue
@@ -118,12 +127,21 @@ public struct CCXGoogleSDK {
                 let request = URLRequest(url: placesURL)
                 
                 URLSession.shared.dataTask(with: request) { (data, response, error) in
-                    var ccxResponse = CCXGooglePlacesResponse(json: data?.json, response: response)
-                    ccxResponse.error = error
-                    DispatchQueue.main.async {
-                        completion(ccxResponse)
+//                    var ccxResponse = GooglePlacesResponse(json: data?.json, response: response)
+                    var respon = GooglePlacesResponse()
+                    if data.isNotNil {
+                        do {
+                            respon = try JSONDecoder().decode(GooglePlacesResponse.self, from: data!)
+                        } catch {
+                            print("[GoogleNeabyPlacesSDK] ERROR: Decoding GooglePlacesResponse..\(error)")
+                        }
                     }
-                    }.resume()
+                    // Set the status:
+                    respon.status = (response as! HTTPURLResponse).statusCode
+                    DispatchQueue.main.async {
+                        completion(respon)
+                    }
+                }.resume()
             }
             
         }

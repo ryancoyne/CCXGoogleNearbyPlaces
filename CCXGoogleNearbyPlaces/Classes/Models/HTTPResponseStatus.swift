@@ -6,7 +6,7 @@
 //
 
 /// HTTP response status code/msg.
-public enum CCXHTTPResponseStatus: CustomStringConvertible {
+public enum HTTPResponseStatus: CustomStringConvertible {
     case `continue`
     case switchingProtocols
     case ok
@@ -104,7 +104,7 @@ public enum CCXHTTPResponseStatus: CustomStringConvertible {
         }
     }
     
-    public static func statusFrom(code: Int) -> CCXHTTPResponseStatus {
+    public static func statusFrom(code: Int) -> HTTPResponseStatus {
         switch code {
         case 100: return .continue
         case 101: return .switchingProtocols

@@ -93,8 +93,8 @@ extension Optional where Wrapped == URLResponse {
         }
     }
     /// This returns a status enumeration, containing the success of the response, the code, and the description of the normal status repsonses.
-    public var status : CCXHTTPResponseStatus {
-        return CCXHTTPResponseStatus.statusFrom(code: self.code)
+    public var status : HTTPResponseStatus {
+        return HTTPResponseStatus.statusFrom(code: self.code)
     }
     public var code : Int {
         return (self as? HTTPURLResponse)?.statusCode ?? -1

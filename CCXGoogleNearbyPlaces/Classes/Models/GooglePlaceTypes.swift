@@ -1,0 +1,15 @@
+//
+//  CCXGooglePlaceTypes.swift
+//  CCXGoogleNearbyPlaces
+//
+//  Created by Ryan Coyne on 11/12/17.
+//
+
+public enum GooglePlaceType : String, Codable {
+    
+    case adminAreaLevel1 = "administrative_area_level_1", adminAreaLevel2 = "administrative_area_level_2", adminAreaLevel3 = "administrative_area_level_3", adminAreaLevel4 = "administrative_area_level_4", adminAreaLevel5 = "administrative_area_level_5", colloqualArea = "colloquial_area", generalContractor = "general_contractor", naturalFeature = "natural_feature", placeOfWorship = "place_of_worship", pointOfInterest = "point_of_interest", postBox = "post_box", postalCode = "postal_code", postalCodePrefix = "postal_code_prefix", postalCodeSuffix = "postal_code_suffix", postalTown = "postal_town", streetAddress = "street_address", streetNumber = "street_number", sublocalityLevel1 = "sublocality_level_1", sublocalityLevel2 = "sublocality_level_2", sublocalityLevel3 = "sublocality_level_3", sublocalityLevel4 = "sublocality_level_4", sublocalityLevel5 = "sublocality_level_5", amusementPark = "amusement_park", artGallery = "art_gallery", beautySalon = "beauty_salon", bicycleStore = "bicycle_store", bookStore = "book_store", bowlingAlley = "bowling_alley", busStation = "bus_station", carDealer = "car_dealer", carRental = "car_rental", carRepair = "car_repair", carWash = "car_wash", cityHall = "city_hall", clothingStore = "clothing_store", convenienceStore = "convenience_store", departmentStore = "department_store", electronicsStore = "electronics_store", fireStation = "fire_station", funeralHome = "funeral_home", furnitureStore = "furniture_store", gasStation = "gas_station", groceryOrSupermarket = "grocery_or_supermarket", hairCare = "hair_care", hardwareStore = "hardware_store", hinduTemple = "hindu_temple", homeGoodsStore = "home_goods_store", insuranceAgency = "insurance_agency", jewelryStore = "jewelry_store", mealTakeaway = "meal_takeaway", mealDelivery = "meal_delivery", localGovernmentOffice = "local_government_office", liquorStore = "liquor_store", movieRental = "movie_rental", movieTheater = "movie_theater", movingCompany = "moving_company", nightClub = "night_club", petStore = "pet_store", postOffice = "post_office", realEstateAgency = "real_estate_agency", roofingContractor = "roofing_contractor", rvPark = "rv_park", shoeStore = "shoe_store", shoppingMall = "shopping_mall", taxiStand = "taxi_stand", subwayStation = "subway_station", trainStation = "train_station", transitStation = "transit_station", travelAgency = "travel_agency", veterinaryCare = "veterinary_care"
+    
+    case accounting, airport, atm, aquarium, bakery, bank, bar, cafe, casino, church, cemetery, campground, courthouse, country, dentist, doctor, establishment, electrician, finance, floor, food, geocode, health, locality, neighborhoodneighborhood, political, intersection, premise, room, route, sublocality, subpremise, embassy, florist, gym, lawyer, laundry, library, locksmith, lodging, mosque, museum, painter, park, parking, pharmacy, physiotherapist, plumber, police, restaurant, school, spa, stadium, storage, store, synagogue, university, zoo
+    
+    case unknown
+}

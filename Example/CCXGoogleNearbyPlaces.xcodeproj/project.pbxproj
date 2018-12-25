@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9F7EA9AE33BA83B01C46D0E1 /* Pods_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8B0AE9650FB158A1D35079 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */; };
+		E193CB039EEBB83E71EA5433 /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4B4591C04857764C6C0B19 /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */; };
 		EF6A9DED3B8FECA8FEE92DCE /* Pods_CCXGoogleNearbyPlaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3689E886B2DD1E621635A70 /* Pods_CCXGoogleNearbyPlaces_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		0C8B0AE9650FB158A1D35079 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7F01EDE1632668678EB4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		404C892A497CF7689CF1530E /* CCXGoogleNearbyPlaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CCXGoogleNearbyPlaces.podspec; path = ../CCXGoogleNearbyPlaces.podspec; sourceTree = "<group>"; };
+		495F398D2B56A9585EDBF798 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCXGoogleNearbyPlaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +43,11 @@
 		607FACE51AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCXGoogleNearbyPlaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		73C730A8BC9454A5E148F882 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7C93C723EBACAA0102DBCEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AF3E86A1604054FAD6E09282 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BBE6510230DC6ACF28C6D382 /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BC4B4591C04857764C6C0B19 /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A51FEE0951D2433B10F9B3 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DF3BBE8D738DA69F710B713D /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3689E886B2DD1E621635A70 /* Pods_CCXGoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7EA9AE33BA83B01C46D0E1 /* Pods_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */,
+				E193CB039EEBB83E71EA5433 /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +151,8 @@
 				AF3E86A1604054FAD6E09282 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */,
 				DF3BBE8D738DA69F710B713D /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */,
 				C5A51FEE0951D2433B10F9B3 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */,
+				495F398D2B56A9585EDBF798 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */,
+				73C730A8BC9454A5E148F882 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 			children = (
 				E3689E886B2DD1E621635A70 /* Pods_CCXGoogleNearbyPlaces_Example.framework */,
 				0C8B0AE9650FB158A1D35079 /* Pods_CCXGoogleNearbyPlaces_Tests.framework */,
+				BC4B4591C04857764C6C0B19 /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +179,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3F14B0B52CABB3E3527B8F21 /* [CP] Embed Pods Frameworks */,
-				7BAD36D46235ADA6093C6CDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +198,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				48A9944196423CF9333616BE /* [CP] Embed Pods Frameworks */,
-				62B3D8F1C48960154AE40ABE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -289,13 +295,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCXGoogleNearbyPlaces.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A7CCC91916E70A1A4C24AF2 /* [CP] Check Pods Manifest.lock */ = {
@@ -309,26 +318,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CCXGoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62B3D8F1C48960154AE40ABE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6DEC80A2AF2AD1A1CF3EB7ED /* [CP] Check Pods Manifest.lock */ = {
@@ -347,21 +341,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BAD36D46235ADA6093C6CDC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -426,12 +405,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -459,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -479,12 +460,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -505,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -547,7 +530,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF3BBE8D738DA69F710B713D /* Pods-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */;
+			baseConfigurationReference = 495F398D2B56A9585EDBF798 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -567,7 +550,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5A51FEE0951D2433B10F9B3 /* Pods-CCXGoogleNearbyPlaces_Tests.release.xcconfig */;
+			baseConfigurationReference = 73C730A8BC9454A5E148F882 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

@@ -1,5 +1,6 @@
 import UIKit
 import XCTest
+import CCXGoogleNearbyPlaces
 
 class Tests: XCTestCase {
     
@@ -23,6 +24,40 @@ class Tests: XCTestCase {
         self.measure() {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testDecodingASuccessfulRespone() {
+        
+        var theResponse = [String:Any]()
+        theResponse["status"] = "OK"
+        var results = [[String:Any]]()
+        for _ in 0...5 {
+            var place = [String:Any]()
+            place["id"] = "21a0b251c9b8392186142c798263e289fe45b4aa"
+            place["name"] = "Some Name"
+            place["vicinity"] = "The vicinity."
+            var geometry  = [String:Any]()
+            geometry["location"] = ["lat":38.9922, "lng":-77.02022]
+            var openingHours = [String:Any]()
+            openingHours["open_now"] = true
+            
+            place["opening_hours"] = openingHours
+            place["geometry"] = geometry
+            
+            results.append(place)
+        }
+        theResponse["results"] = results
+        
+        // Now lets bring this [String:Any] object to data:
+        if let theData = try? JSONSerialization.data(withJSONObject: theResponse) {
+            do {
+                let theResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
+                print(theResponse)
+            } catch {
+                print(error)
+            }
+        }
+        
     }
     
 }

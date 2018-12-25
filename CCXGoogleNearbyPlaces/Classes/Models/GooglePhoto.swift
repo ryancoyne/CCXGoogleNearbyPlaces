@@ -5,14 +5,15 @@
 //  Created by Ryan Coyne on 11/11/17.
 //
 
-public struct CCXGooglePhoto {
+public struct GooglePhoto : Codable {
     
     public var width: Int?
     public var height: Int?
+    public var htmlAttributions : [String]
     public var url: URL? {
-        var buildURL = CCXGooglePhoto.host
+        var buildURL = GooglePhoto.host
         
-        var queryParams : [String:Any] = ["key":CCXGoogleSDK.places.apiKey!]
+        var queryParams : [String:Any] = ["key":GoogleNearbyPlacesSDK.places.apiKey!]
         
         if maxwidth != nil {
             queryParams["maxwidth"] = self.maxwidth!
@@ -23,15 +24,17 @@ public struct CCXGooglePhoto {
         buildURL.addQueryParams(queryParams)
         return buildURL
     }
-    private var photoReference : String?
+    public var photoReference : String?
     public var maxwidth : Int?
     
     private static var host = URL(string: "https://maps.googleapis.com/maps/api/place/photo")!
     
-    init(photoJSON: [String:Any]) {
-        self.height = photoJSON["height"] as? Int
-        self.width = photoJSON["width"] as? Int
-        self.photoReference = photoJSON["photo_reference"] as? String
+    enum CodingKeys : String, CodingKey {
+        case width
+        case height
+        case photoReference = "photo_reference"
+        case maxwidth
+        case htmlAttributions = "html_attributions"
     }
     
 }

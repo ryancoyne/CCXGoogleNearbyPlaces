@@ -4,7 +4,7 @@ target 'CCXGoogleNearbyPlaces_Example' do
   pod 'CCXGoogleNearbyPlaces', :path => '../'
 
   target 'CCXGoogleNearbyPlaces_Tests' do
-    inherit! :search_paths
+    pod 'CCXGoogleNearbyPlaces', :path => '../'
 
     
   end
