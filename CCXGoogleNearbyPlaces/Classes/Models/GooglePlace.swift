@@ -9,8 +9,10 @@ import CoreLocation
 
 public struct GooglePlace : Codable {
     
-    /// This is the id of the place.
+    /// This is the id.
     public var id : String?
+    /// THis is another id of the place??
+    public var placeId : String?
     /// This returns the coordinate of the place nearby.
     public var geometry: GoogleGeometry?
     /// This returns the name of the place nearby.
@@ -27,7 +29,8 @@ public struct GooglePlace : Codable {
     public var reference : String?
     
     enum CodingKeys : String, CodingKey {
-        case id = "place_id"
+        case id
+        case placeId = "place_id"
         case reference
         case geometry
         case name
@@ -40,6 +43,7 @@ public struct GooglePlace : Codable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(id, forKey: .id)
+        try container.encode(placeId, forKey: .placeId)
         try container.encode(name, forKey: .name)
         try container.encode(reference, forKey: .reference)
         try container.encode(geometry, forKey: .geometry)
@@ -51,14 +55,15 @@ public struct GooglePlace : Codable {
     
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decode(String.self, forKey: .id)
-        geometry = try values.decode(GoogleGeometry.self, forKey: .geometry)
-        name = try values.decode(String.self, forKey: .name)
-        reference = try values.decode(String.self, forKey: .reference)
-        photos = try values.decode([GooglePhoto].self, forKey: .photos)
+        id = try? values.decode(String.self, forKey: .id)
+        placeId = try? values.decode(String.self, forKey: .placeId)
+        geometry = try? values.decode(GoogleGeometry.self, forKey: .geometry)
+        name = try? values.decode(String.self, forKey: .name)
+        reference = try? values.decode(String.self, forKey: .reference)
+        photos = try? values.decode([GooglePhoto].self, forKey: .photos)
         vicinity = try? values.decode(String.self, forKey: .vicinity)
         isOpen = try values.decode(GoogleOpeningHours.self, forKey: .isOpen)
-        types = try values.decode([GooglePlaceType].self, forKey: .types)
+        types = try? values.decode([GooglePlaceType].self, forKey: .types)
     }
     
 }

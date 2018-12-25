@@ -41,6 +41,7 @@ class Tests: XCTestCase {
             var openingHours = [String:Any]()
             openingHours["open_now"] = true
             
+            place["types"] = ["restaurant", "food", "establishment"]
             place["opening_hours"] = openingHours
             place["geometry"] = geometry
             
@@ -51,7 +52,8 @@ class Tests: XCTestCase {
         // Now lets bring this [String:Any] object to data:
         if let theData = try? JSONSerialization.data(withJSONObject: theResponse) {
             do {
-                let theResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
+                var theResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
+                theResponse.status = 200
                 print(theResponse)
             } catch {
                 print(error)
