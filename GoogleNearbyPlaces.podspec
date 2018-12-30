@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name        = 'CCXGoogleNearbyPlaces'
-  s.version      = '1.0.2'
+  s.name        = 'GoogleNearbyPlaces'
+  s.version      = '1.0.3'
   s.summary  = 'CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  All you do is set your API Key and you are good to go!'
 
   # This description is used to generate tags and improve search results.
@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = 'CCXGoogleNearbyPlaces', 'CCXGoogleNearbyPlaces/**/*.{h,m,swift}', 'CCXGoogleNearByPlaces/Models/**/*.{h,m,swift}'
+  s.source_files = 'GoogleNearbyPlaces', 'GoogleNearbyPlaces/**/*.{h,m,swift}', 'CCXGoogleNearByPlaces/Models/**/*.{h,m,swift}'
  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

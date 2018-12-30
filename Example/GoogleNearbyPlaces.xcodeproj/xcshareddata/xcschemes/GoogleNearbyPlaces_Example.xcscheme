@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "CCXGoogleNearbyPlaces_Example.app"
-               BlueprintName = "CCXGoogleNearbyPlaces_Example"
-               ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "CCXGoogleNearbyPlaces_Tests.xctest"
-               BlueprintName = "CCXGoogleNearbyPlaces_Tests"
-               ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
+               BuildableName = "GoogleNearbyPlaces_Example.app"
+               BlueprintName = "GoogleNearbyPlaces_Example"
+               ReferencedContainer = "container:GoogleNearbyPlaces.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "CCXGoogleNearbyPlaces_Tests.xctest"
-               BlueprintName = "CCXGoogleNearbyPlaces_Tests"
-               ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
+               BuildableName = "GoogleNearbyPlaces_Tests.xctest"
+               BlueprintName = "GoogleNearbyPlaces_Tests"
+               ReferencedContainer = "container:GoogleNearbyPlaces.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CCXGoogleNearbyPlaces_Example.app"
-            BlueprintName = "CCXGoogleNearbyPlaces_Example"
-            ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
+            BuildableName = "GoogleNearbyPlaces_Example.app"
+            BlueprintName = "GoogleNearbyPlaces_Example"
+            ReferencedContainer = "container:GoogleNearbyPlaces.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CCXGoogleNearbyPlaces_Example.app"
-            BlueprintName = "CCXGoogleNearbyPlaces_Example"
-            ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
+            BuildableName = "GoogleNearbyPlaces_Example.app"
+            BlueprintName = "GoogleNearbyPlaces_Example"
+            ReferencedContainer = "container:GoogleNearbyPlaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CCXGoogleNearbyPlaces_Example.app"
-            BlueprintName = "CCXGoogleNearbyPlaces_Example"
-            ReferencedContainer = "container:CCXGoogleNearbyPlaces.xcodeproj">
+            BuildableName = "GoogleNearbyPlaces_Example.app"
+            BlueprintName = "GoogleNearbyPlaces_Example"
+            ReferencedContainer = "container:GoogleNearbyPlaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A478937586A559944A83E4C /* Pods_CCXGoogleNearbyPlaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267C6D1B8916C4D3F3081A3E /* Pods_CCXGoogleNearbyPlaces_Example.framework */; };
 		27507F8FBEBE8EF843519B1C /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DBE6AC151BF6737664563A /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -15,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		812A5F358AF06A4978169036 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB8B4AEB3A5FE62A6ABE206 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */; };
+		E349194EF1660A5001343528 /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F97BEBE16D9E54AA0E3F07 /* Pods_GoogleNearbyPlaces_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,24 +29,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BB8B4AEB3A5FE62A6ABE206 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DC607C7BB278AD7C6FBB7F /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		267C6D1B8916C4D3F3081A3E /* Pods_CCXGoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7F01EDE1632668678EB4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		404C892A497CF7689CF1530E /* CCXGoogleNearbyPlaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CCXGoogleNearbyPlaces.podspec; path = ../CCXGoogleNearbyPlaces.podspec; sourceTree = "<group>"; };
 		5BEC9D134463009036B35DB2 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCXGoogleNearbyPlaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* GoogleNearbyPlaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleNearbyPlaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCXGoogleNearbyPlaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* GoogleNearbyPlaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleNearbyPlaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7C93C723EBACAA0102DBCEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		95F2800DFEECDFA3B9C92C49 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4F97BEBE16D9E54AA0E3F07 /* Pods_GoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60FC4CA5960E64B0CC29CAA /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A6F94FC3286B752754E55B09 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B05CA9682F4C8AF6AFE9B058 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2DBE6AC151BF6737664563A /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B432D1390D78435FA0BCD8AE /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE50D555FBFAFFBA7B2B7768 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A478937586A559944A83E4C /* Pods_CCXGoogleNearbyPlaces_Example.framework in Frameworks */,
+				E349194EF1660A5001343528 /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27507F8FBEBE8EF843519B1C /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework in Frameworks */,
+				812A5F358AF06A4978169036 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,10 @@
 				5BEC9D134463009036B35DB2 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */,
 				B05CA9682F4C8AF6AFE9B058 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */,
 				FE50D555FBFAFFBA7B2B7768 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */,
+				A6F94FC3286B752754E55B09 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */,
+				A60FC4CA5960E64B0CC29CAA /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */,
+				95F2800DFEECDFA3B9C92C49 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */,
+				B432D1390D78435FA0BCD8AE /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -85,6 +97,8 @@
 			children = (
 				267C6D1B8916C4D3F3081A3E /* Pods_CCXGoogleNearbyPlaces_Example.framework */,
 				B2DBE6AC151BF6737664563A /* Pods_CCXGoogleNearbyPlaces_Example_CCXGoogleNearbyPlaces_Tests.framework */,
+				A4F97BEBE16D9E54AA0E3F07 /* Pods_GoogleNearbyPlaces_Example.framework */,
+				1BB8B4AEB3A5FE62A6ABE206 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for CCXGoogleNearbyPlaces */,
+				607FACD21AFB9204008FA782 /* Example for GoogleNearbyPlaces */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				13FA8CE26701B0D902963D7D /* Pods */,
@@ -104,13 +118,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example.app */,
-				607FACE51AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* GoogleNearbyPlaces_Example.app */,
+				607FACE51AFB9204008FA782 /* GoogleNearbyPlaces_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for CCXGoogleNearbyPlaces */ = {
+		607FACD21AFB9204008FA782 /* Example for GoogleNearbyPlaces */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -120,8 +134,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for CCXGoogleNearbyPlaces";
-			path = CCXGoogleNearbyPlaces;
+			name = "Example for GoogleNearbyPlaces";
+			path = GoogleNearbyPlaces;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -162,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example */ = {
+		607FACCF1AFB9204008FA782 /* GoogleNearbyPlaces_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Example" */;
 			buildPhases = (
 				0A9737E025BAA48CE6F145B7 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = CCXGoogleNearbyPlaces_Example;
+			name = GoogleNearbyPlaces_Example;
 			productName = CCXGoogleNearbyPlaces;
-			productReference = 607FACD01AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* GoogleNearbyPlaces_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests */ = {
+		607FACE41AFB9204008FA782 /* GoogleNearbyPlaces_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Tests" */;
 			buildPhases = (
 				2C3B5511B9B242BB4A1233C1 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -196,9 +210,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = CCXGoogleNearbyPlaces_Tests;
+			name = GoogleNearbyPlaces_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* GoogleNearbyPlaces_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "CCXGoogleNearbyPlaces" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "GoogleNearbyPlaces" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,8 +250,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example */,
-				607FACE41AFB9204008FA782 /* CCXGoogleNearbyPlaces_Tests */,
+				607FACCF1AFB9204008FA782 /* GoogleNearbyPlaces_Example */,
+				607FACE41AFB9204008FA782 /* GoogleNearbyPlaces_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +288,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CCXGoogleNearbyPlaces_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GoogleNearbyPlaces_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -292,7 +306,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -305,16 +319,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleNearbyPlaces/GoogleNearbyPlaces.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCXGoogleNearbyPlaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleNearbyPlaces.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6EE9C210F3F8291DBC2986DB /* [CP] Embed Pods Frameworks */ = {
@@ -323,16 +337,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CCXGoogleNearbyPlaces/CCXGoogleNearbyPlaces.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleNearbyPlaces/GoogleNearbyPlaces.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCXGoogleNearbyPlaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleNearbyPlaces.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests/Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,7 +374,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* CCXGoogleNearbyPlaces_Example */;
+			target = 607FACCF1AFB9204008FA782 /* GoogleNearbyPlaces_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -490,11 +504,11 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23DC607C7BB278AD7C6FBB7F /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */;
+			baseConfigurationReference = A6F94FC3286B752754E55B09 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N2BC6BDQ69;
-				INFOPLIST_FILE = CCXGoogleNearbyPlaces/Info.plist;
+				INFOPLIST_FILE = GoogleNearbyPlaces/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -506,11 +520,11 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BEC9D134463009036B35DB2 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */;
+			baseConfigurationReference = A60FC4CA5960E64B0CC29CAA /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N2BC6BDQ69;
-				INFOPLIST_FILE = CCXGoogleNearbyPlaces/Info.plist;
+				INFOPLIST_FILE = GoogleNearbyPlaces/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -522,7 +536,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B05CA9682F4C8AF6AFE9B058 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.debug.xcconfig */;
+			baseConfigurationReference = 95F2800DFEECDFA3B9C92C49 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -542,7 +556,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE50D555FBFAFFBA7B2B7768 /* Pods-CCXGoogleNearbyPlaces_Example-CCXGoogleNearbyPlaces_Tests.release.xcconfig */;
+			baseConfigurationReference = B432D1390D78435FA0BCD8AE /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -559,7 +573,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "CCXGoogleNearbyPlaces" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "GoogleNearbyPlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -568,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -577,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CCXGoogleNearbyPlaces_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

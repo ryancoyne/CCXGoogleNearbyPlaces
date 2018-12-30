@@ -1,16 +1,16 @@
 PODS:
-  - CCXGoogleNearbyPlaces (1.0.2)
+  - GoogleNearbyPlaces (1.0.3)
 
 DEPENDENCIES:
-  - CCXGoogleNearbyPlaces (from `../`)
+  - GoogleNearbyPlaces (from `../`)
 
 EXTERNAL SOURCES:
-  CCXGoogleNearbyPlaces:
+  GoogleNearbyPlaces:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCXGoogleNearbyPlaces: f442d4c58164db446a9ee9ac70b604d14b76bde5
+  GoogleNearbyPlaces: d8c31fe62efc6e904bab6f6241d67de026793bbd
 
-PODFILE CHECKSUM: ec535d473d08ab7005e9d9783602902d49a62326
+PODFILE CHECKSUM: 7635df823e53d0cc336253358e26b57a02dea9a9
 
 COCOAPODS: 1.5.3

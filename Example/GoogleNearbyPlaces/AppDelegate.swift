@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CCXGoogleNearbyPlaces
+import GoogleNearbyPlaces
 import CoreLocation
 
 @UIApplicationMain
