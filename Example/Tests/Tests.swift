@@ -52,8 +52,13 @@ class Tests: XCTestCase {
         // Now lets bring this [String:Any] object to data:
         if let theData = try? JSONSerialization.data(withJSONObject: theResponse) {
             do {
-                var theResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
-                theResponse.status = 200
+                var theObjResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
+                theObjResponse.status = 200
+                
+                if var place = theObjResponse.places?.first, place.isOpen ~> true {
+                    place.isOpen = false
+                    print(place)
+                }
                 print(theResponse)
             } catch {
                 print(error)

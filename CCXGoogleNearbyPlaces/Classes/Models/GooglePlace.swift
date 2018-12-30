@@ -60,7 +60,9 @@ public struct GooglePlace : Codable {
         geometry = try? values.decode(GoogleGeometry.self, forKey: .geometry)
         name = try? values.decode(String.self, forKey: .name)
         reference = try? values.decode(String.self, forKey: .reference)
-        photos = try? values.decode([GooglePhoto].self, forKey: .photos)
+        if let thephotos = try? values.decode([GooglePhoto].self, forKey: .photos), !thephotos.isEmpty {
+            photos = thephotos
+        }
         vicinity = try? values.decode(String.self, forKey: .vicinity)
         isOpen = try values.decode(GoogleOpeningHours.self, forKey: .isOpen)
         types = try? values.decode([GooglePlaceType].self, forKey: .types)

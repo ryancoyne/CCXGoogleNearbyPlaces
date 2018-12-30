@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if response.places.isNotNil {
                     if response.canLoadMore {
                         // You should only use the pageToken in the get function on your next request.
+                        if var place = response.places?.first, place.isOpen ~> true {
+                            place.isOpen = false
+                            print(place)
+                        }
 //                        if let place = response.places?.first, place.isOpen {
 //
 //                        }

@@ -15,10 +15,10 @@ public struct GoogleOpeningHours : ExpressibleByBooleanLiteral, Codable {
         self.isOpen = value
     }
     
-    static func ??(lhs : GoogleOpeningHours, rhs : Bool) -> Bool {
+    public static func ~>(lhs : GoogleOpeningHours, rhs : Bool) -> Bool {
         return lhs.isOpen == rhs
     }
-    static func ??(lhs : Bool, rhs : GoogleOpeningHours) -> Bool {
+    public static func ~>(lhs : Bool, rhs : GoogleOpeningHours) -> Bool {
         return lhs == rhs.isOpen
     }
     
