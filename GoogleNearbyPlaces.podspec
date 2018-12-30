@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = 'CCXGoogleNearbyPlaces cocoapod is a wrapper around the Google Nearby Places Web Service API.  This gives you all the places using a coordinate, radius, & by text search!'
+  s.description  = 'GoogleNearbyPlaces cocoapod is a wrapper around the Google Nearby Places Web Service API.  This gives you all the places using a coordinate, radius, & by text search!'
 
-  s.homepage     = "https://github.com/ryancoyne/CCXGoogleNearbyPlaces"
+  s.homepage     = "https://github.com/ryancoyne/GoogleNearbyPlaces"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ryancoyne/CCXGoogleNearbyPlaces.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ryancoyne/GoogleNearbyPlaces.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
