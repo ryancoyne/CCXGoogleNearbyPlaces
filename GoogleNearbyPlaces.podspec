@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name        = 'GoogleNearbyPlaces'
-  s.version      = '1.0.3'
+  s.version      = '2.0.0'
   s.summary  = 'CCXGoogleNearbyPlaces is a wrapper around the Google Places API.  All you do is set your API Key and you are good to go!'
 
   # This description is used to generate tags and improve search results.
