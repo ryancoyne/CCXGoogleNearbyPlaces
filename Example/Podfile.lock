@@ -1,5 +1,5 @@
 PODS:
-  - GoogleNearbyPlaces (1.0.3)
+  - GoogleNearbyPlaces (2.0.0)
 
 DEPENDENCIES:
   - GoogleNearbyPlaces (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GoogleNearbyPlaces: d8c31fe62efc6e904bab6f6241d67de026793bbd
+  GoogleNearbyPlaces: 97618cc53a8ea2bbb177fb172b3f9d3c5bc3b8f1
 
 PODFILE CHECKSUM: 7635df823e53d0cc336253358e26b57a02dea9a9
 
