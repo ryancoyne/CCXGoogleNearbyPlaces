@@ -36,7 +36,10 @@ public struct GooglePlacesResponse : Codable {
     public init()  {  }
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        places = try values.decode([GooglePlace].self, forKey: .places)
+        let theplaces = try values.decode([GooglePlace].self, forKey: .places)
+        if !theplaces.isEmpty {
+            places = theplaces
+        }
         googleStatus = try values.decode(String.self, forKey: .googleStatus)
         nextPageToken = try? values.decode(String.self, forKey: .nextPageToken)
         errorMessage = try? values.decode(String.self, forKey: .errorMessage)

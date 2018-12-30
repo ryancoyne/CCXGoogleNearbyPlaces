@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import CCXGoogleNearbyPlaces
+import GoogleNearbyPlaces
 
 class Tests: XCTestCase {
     
