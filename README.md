@@ -7,8 +7,8 @@
 
 ## Why use GoogleNearbyPlaces?
 - I made this cocoapod for the use of Google Maps & integrating a way to search nearby places without the generic search controller that they provide.  This give you the flexibility of making your own custom search UI.
-- CCXGoogleNearbyPlaces gives you ALL the options using the API.  It gives you the photo URL's for the places found as well as paging results, searching by a set type/category or custom category & search by text credientials.
-- CCXGoogleNearbyPlaces does NOT use another other third party networking tools to complete the API calls.  
+- GoogleNearbyPlaces gives you ALL the options using the API.  It gives you the photo URL's for the places found as well as paging results, searching by a set type/category or custom category & search by text credientials.
+- GoogleNearbyPlaces does NOT use another other third party networking tools to complete the API calls.  
 
 ## Example
 
