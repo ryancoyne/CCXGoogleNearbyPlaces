@@ -1,6 +1,6 @@
 //
-//  CCXExtensions.swift
-//  CCXGoogleNearbyPlaces
+//  Extensions.swift
+//  GoogleNearbyPlaces
 //
 //  Created by Ryan Coyne on 11/11/17.
 //

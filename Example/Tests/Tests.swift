@@ -54,14 +54,13 @@ class Tests: XCTestCase {
             do {
                 var theObjResponse = try JSONDecoder().decode(GooglePlacesResponse.self, from: theData)
                 theObjResponse.status = 200
-                
                 if var place = theObjResponse.places?.first, place.isOpen ~> true {
                     place.isOpen = false
                     print(place)
                 }
                 print(theResponse)
             } catch {
-                print(error)
+                XCTAssert(true, error.localizedDescription)
             }
         }
         

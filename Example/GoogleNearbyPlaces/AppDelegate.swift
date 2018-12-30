@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CCXGoogleNearbyPlaces
+//  GoogleNearbyPlaces
 //
 //  Created by ryancoyne on 11/11/2017.
 //  Copyright (c) 2017 ryancoyne. All rights reserved.

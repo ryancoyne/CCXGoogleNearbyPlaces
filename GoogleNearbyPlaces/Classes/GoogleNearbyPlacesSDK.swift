@@ -1,6 +1,6 @@
 //
-//  CCXGoogleSDK
-//  CCXGoogleNearbyPlaces
+//  GoogleSDK
+//  GoogleNearbyPlaces
 //
 //  Created by Ryan Coyne on 11/11/17.
 //
