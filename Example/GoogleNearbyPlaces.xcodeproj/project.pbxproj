@@ -33,7 +33,7 @@
 		23DC607C7BB278AD7C6FBB7F /* Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		267C6D1B8916C4D3F3081A3E /* Pods_CCXGoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCXGoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7F01EDE1632668678EB4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		404C892A497CF7689CF1530E /* CCXGoogleNearbyPlaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CCXGoogleNearbyPlaces.podspec; path = ../CCXGoogleNearbyPlaces.podspec; sourceTree = "<group>"; };
+		404C892A497CF7689CF1530E /* GoogleNearbyPlaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GoogleNearbyPlaces.podspec; path = ../GoogleNearbyPlaces.podspec; sourceTree = "<group>"; };
 		5BEC9D134463009036B35DB2 /* Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCXGoogleNearbyPlaces_Example/Pods-CCXGoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GoogleNearbyPlaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleNearbyPlaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				404C892A497CF7689CF1530E /* CCXGoogleNearbyPlaces.podspec */,
+				404C892A497CF7689CF1530E /* GoogleNearbyPlaces.podspec */,
 				3A7F01EDE1632668678EB4B2 /* README.md */,
 				7C93C723EBACAA0102DBCEE2 /* LICENSE */,
 			);
