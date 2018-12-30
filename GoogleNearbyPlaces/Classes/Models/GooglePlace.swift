@@ -65,7 +65,9 @@ public struct GooglePlace : Codable {
         }
         vicinity = try? values.decode(String.self, forKey: .vicinity)
         isOpen = try values.decode(GoogleOpeningHours.self, forKey: .isOpen)
-        types = try? values.decode([GooglePlaceType].self, forKey: .types)
+        if let thetypes = try? values.decode([GooglePlaceType].self, forKey: .types), !thetypes.isEmpty {
+            types = thetypes
+        }
     }
     
 }
