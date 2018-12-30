@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44E7BD625E6039B6FEC26664 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C3287BEA2A7B4732F2C43E /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */; };
-		4D8A7A09EAC1AF84BD0A00CD /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5A1F4F861F253BE1A89850 /* Pods_GoogleNearbyPlaces_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		94A7DEAA74F057E76A226F5D /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1656A812B3AFCE4722684A9 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */; };
+		9739BA78AB51D68C9DC191C9 /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD9F6655C145AE355293773 /* Pods_GoogleNearbyPlaces_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,8 @@
 /* Begin PBXFileReference section */
 		3A7F01EDE1632668678EB4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		404C892A497CF7689CF1530E /* GoogleNearbyPlaces.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GoogleNearbyPlaces.podspec; path = ../GoogleNearbyPlaces.podspec; sourceTree = "<group>"; };
-		4A5A1F4F861F253BE1A89850 /* Pods_GoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		432D426762FA4D2303CCC62D /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5BC5D71D64414B4C7BD4D452 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GoogleNearbyPlaces_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleNearbyPlaces_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +42,11 @@
 		607FACE51AFB9204008FA782 /* GoogleNearbyPlaces_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleNearbyPlaces_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65C3287BEA2A7B4732F2C43E /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C93C723EBACAA0102DBCEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		94356A410C89A873436B6A94 /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B480C0394E06BE2B30C259F8 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E3C3A233094E39EC9AE91536 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F2E34593B40BE2173F208FB6 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8379EC9E1AB6579446B797EB /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9CD9F6655C145AE355293773 /* Pods_GoogleNearbyPlaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1656A812B3AFCE4722684A9 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BBB8CFA759A6F7829E9D52 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8A7A09EAC1AF84BD0A00CD /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */,
+				9739BA78AB51D68C9DC191C9 /* Pods_GoogleNearbyPlaces_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,22 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E7BD625E6039B6FEC26664 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */,
+				94A7DEAA74F057E76A226F5D /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13EE925C355BB16D63771F87 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A5A1F4F861F253BE1A89850 /* Pods_GoogleNearbyPlaces_Example.framework */,
-				65C3287BEA2A7B4732F2C43E /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +76,8 @@
 				607FACD21AFB9204008FA782 /* Example for GoogleNearbyPlaces */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				FA0903C4E9EF9FA3B631B8FF /* Pods */,
-				13EE925C355BB16D63771F87 /* Frameworks */,
+				CCAA0BB187560ED1518720A7 /* Pods */,
+				8E08BA83A3A10F6F19852F41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,13 +139,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		FA0903C4E9EF9FA3B631B8FF /* Pods */ = {
+		8E08BA83A3A10F6F19852F41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B480C0394E06BE2B30C259F8 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */,
-				94356A410C89A873436B6A94 /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */,
-				F2E34593B40BE2173F208FB6 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */,
-				E3C3A233094E39EC9AE91536 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */,
+				9CD9F6655C145AE355293773 /* Pods_GoogleNearbyPlaces_Example.framework */,
+				A1656A812B3AFCE4722684A9 /* Pods_GoogleNearbyPlaces_Example_GoogleNearbyPlaces_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCAA0BB187560ED1518720A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8379EC9E1AB6579446B797EB /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */,
+				432D426762FA4D2303CCC62D /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */,
+				5BC5D71D64414B4C7BD4D452 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */,
+				C4BBB8CFA759A6F7829E9D52 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Example" */;
 			buildPhases = (
-				900B5FB40E907F23E312B26F /* [CP] Check Pods Manifest.lock */,
+				B8431AF2AF7CE43CD3FD0550 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3BBD1A3CB8A2CDD204A9637C /* [CP] Embed Pods Frameworks */,
+				440C560F4F3EA29E53608FAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,11 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GoogleNearbyPlaces_Tests" */;
 			buildPhases = (
-				EA0FF6C1F4D85599DF4ED65D /* [CP] Check Pods Manifest.lock */,
+				05A555F126D90972D209976B /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				694C4C0C371E750820BE41F3 /* [CP] Embed Pods Frameworks */,
+				991207BD296DE7E69805ABE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,7 +263,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3BBD1A3CB8A2CDD204A9637C /* [CP] Embed Pods Frameworks */ = {
+		05A555F126D90972D209976B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		440C560F4F3EA29E53608FAC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,7 +299,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example/Pods-GoogleNearbyPlaces_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		694C4C0C371E750820BE41F3 /* [CP] Embed Pods Frameworks */ = {
+		991207BD296DE7E69805ABE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +317,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		900B5FB40E907F23E312B26F /* [CP] Check Pods Manifest.lock */ = {
+		B8431AF2AF7CE43CD3FD0550 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,24 +329,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GoogleNearbyPlaces_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA0FF6C1F4D85599DF4ED65D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -490,7 +490,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B480C0394E06BE2B30C259F8 /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */;
+			baseConfigurationReference = 8379EC9E1AB6579446B797EB /* Pods-GoogleNearbyPlaces_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N2BC6BDQ69;
@@ -506,7 +506,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94356A410C89A873436B6A94 /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */;
+			baseConfigurationReference = 432D426762FA4D2303CCC62D /* Pods-GoogleNearbyPlaces_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N2BC6BDQ69;
@@ -522,7 +522,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2E34593B40BE2173F208FB6 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */;
+			baseConfigurationReference = 5BC5D71D64414B4C7BD4D452 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -542,7 +542,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3C3A233094E39EC9AE91536 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */;
+			baseConfigurationReference = C4BBB8CFA759A6F7829E9D52 /* Pods-GoogleNearbyPlaces_Example-GoogleNearbyPlaces_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
