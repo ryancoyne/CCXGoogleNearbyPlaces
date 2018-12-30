@@ -137,4 +137,4 @@ ryancoyne, ryan@clearcodex.com
 
 ## License
 
-CCXGoogleNearbyPlaces is available under the MIT license. See the LICENSE file for more info.
+GoogleNearbyPlaces is available under the MIT license. See the LICENSE file for more info.
