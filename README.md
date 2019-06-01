@@ -1,14 +1,14 @@
-# CCXGoogleNearbyPlaces
+# GoogleNearbyPlaces
 
-[![CI Status](http://img.shields.io/travis/ryancoyne/CCXGoogleNearbyPlaces.svg?style=flat)](https://travis-ci.org/ryancoyne/CCXGoogleNearbyPlaces)
-[![Version](https://img.shields.io/cocoapods/v/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
-[![License](https://img.shields.io/cocoapods/l/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
-[![Platform](https://img.shields.io/cocoapods/p/CCXGoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/CCXGoogleNearbyPlaces)
+[![CI Status](http://img.shields.io/travis/ryancoyne/GoogleNearbyPlaces.svg?style=flat)](https://travis-ci.org/ryancoyne/GoogleNearbyPlaces)
+[![Version](https://img.shields.io/cocoapods/v/GoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/GoogleNearbyPlaces)
+[![License](https://img.shields.io/cocoapods/l/GoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/GoogleNearbyPlaces)
+[![Platform](https://img.shields.io/cocoapods/p/GoogleNearbyPlaces.svg?style=flat)](http://cocoapods.org/pods/GoogleNearbyPlaces)
 
-## Why use CCXGoogleNearbyPlaces?
+## Why use GoogleNearbyPlaces?
 - I made this cocoapod for the use of Google Maps & integrating a way to search nearby places without the generic search controller that they provide.  This give you the flexibility of making your own custom search UI.
-- CCXGoogleNearbyPlaces gives you ALL the options using the API.  It gives you the photo URL's for the places found as well as paging results, searching by a set type/category or custom category & search by text credientials.
-- CCXGoogleNearbyPlaces does NOT use another other third party networking tools to complete the API calls.  
+- GoogleNearbyPlaces gives you ALL the options using the API.  It gives you the photo URL's for the places found as well as paging results, searching by a set type/category or custom category & search by text credientials.
+- GoogleNearbyPlaces does NOT use another other third party networking tools to complete the API calls.  
 
 ## Example
 
@@ -18,11 +18,11 @@ From there, you may set a breakpoint in the AppDelegate where we call to the Nea
 
 ## Installation
 
-CCXGoogleNearbyPlaces is available through [CocoaPods](http://cocoapods.org). To install
+GoogleNearbyPlaces is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CCXGoogleNearbyPlaces'
+pod 'GoogleNearbyPlaces'
 ```
 
 ## Integration
@@ -36,7 +36,7 @@ You will then need to go and make sure you have an API key to use the cocoapod. 
 ### Configuring your API key
 Once you have obtained a valid API key from the link above, you will set your api key as the following:
 ```
-CCXGoogleSDK.places.apiKey = "Your API Key"
+GoogleSDK.places.apiKey = "Your API Key"
 ```
 
 ### Usage Details
@@ -88,7 +88,7 @@ CCXGoogleSDK.places.get(withRadius: 300.4, coordinate: coord) { response in
 
 Get all the nearby places with your next page token:
 ```
-CCXGoogleSDK.places.get(pageToken: "nextPageToken") { (response) in
+GoogleSDK.places.get(pageToken: "nextPageToken") { (response) in
 
     if response.status.isSuccess {
         if response.places.isNotNil {
@@ -109,7 +109,7 @@ CCXGoogleSDK.places.get(pageToken: "nextPageToken") { (response) in
 
 Get places around you with a specific type or category:
 ```
-CCXGoogleSDK.places.get(withRadius: 200.4, coordinate: coord, category: .hairCare) { (response) in
+GoogleSDK.places.get(withRadius: 200.4, coordinate: coord, category: .hairCare) { (response) in
     if response.status.isSuccess {
         if response.places.isNotNil {
             if response.canLoadMore {
@@ -137,4 +137,4 @@ ryancoyne, ryan@clearcodex.com
 
 ## License
 
-CCXGoogleNearbyPlaces is available under the MIT license. See the LICENSE file for more info.
+GoogleNearbyPlaces is available under the MIT license. See the LICENSE file for more info.
